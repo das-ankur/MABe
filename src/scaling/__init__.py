@@ -1,0 +1,1 @@
+from .min_max_scaling import compute_global_min_max, min_max_scaling

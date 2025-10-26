@@ -1,0 +1,12 @@
+# Virtual environments
+.venv
+
+# Dataset
+datasets
+
+# Kaggle Credentials
+kaggle.json
+
+# Python cache folders and compiled files
+__pycache__/
+*.pyc

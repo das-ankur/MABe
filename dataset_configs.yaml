@@ -1,0 +1,6 @@
+train_metdata_path: datasets\train.csv
+test_metatdata_path: datasets\test.csv
+sample_submission_path: datasets\sample_submission.csv
+train_tracking_folder_path: datasets\train_tracking
+train_annotation_folder_path: datasets\train_annotation
+test_tracking_folder_path: datasets\test_tracking
