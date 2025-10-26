@@ -3,6 +3,9 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 import multiprocessing
 import warnings
 import pickle
+from tqdm import tqdm
+import numpy as np
+import pandas as pd
 from torch.utils.data import Dataset
 
 
@@ -41,7 +44,7 @@ class VideoSegmentsDataset(Dataset):
         annotation_folder,
         context_length=16,
         overlap_frames=8,
-        skip_missing=False,
+        skip_missing=True,
         pickle_dir="dumps/data_segments",
         force_rebuild=False,
     ):

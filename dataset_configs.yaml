@@ -1,4 +1,4 @@
-train_metdata_path: datasets\train.csv
+train_metadata_path: datasets\train.csv
 test_metatdata_path: datasets\test.csv
 sample_submission_path: datasets\sample_submission.csv
 train_tracking_folder_path: datasets\train_tracking
