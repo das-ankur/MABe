@@ -78,7 +78,7 @@ def evaluate_epoch(
     return metrics, flat_logits, flat_targets
 
 
-def train(
+def train_model(
     model: torch.nn.Module,
     train_loader: torch.utils.data.DataLoader,
     val_loader: torch.utils.data.DataLoader,
