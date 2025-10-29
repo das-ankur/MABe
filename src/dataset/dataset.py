@@ -6,7 +6,9 @@ import pickle
 from tqdm import tqdm
 import numpy as np
 import pandas as pd
+import torch
 from torch.utils.data import Dataset
+from .load_data import load_video_data
 
 
 
@@ -46,6 +48,7 @@ class VideoSegmentsDataset(Dataset):
         overlap_frames=8,
         skip_missing=True,
         pickle_dir="dumps/data_segments",
+        subset_name="train",
         force_rebuild=False,
     ):
         assert len(lab_list) == len(video_list), "lab_list and video_list must be parallel lists"
@@ -63,7 +66,7 @@ class VideoSegmentsDataset(Dataset):
         self.force_rebuild = force_rebuild
 
         os.makedirs(self.pickle_dir, exist_ok=True)
-        self.pickle_path = os.path.join(self.pickle_dir, "video_segments.pkl")
+        self.pickle_path = os.path.join(self.pickle_dir, f"video_segments_{subset_name}.pkl")
 
         self.stride = context_length - overlap_frames
         self.segments = []
