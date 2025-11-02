@@ -80,7 +80,57 @@ def _train(dataset_configs_path: str, train_configs_path: str):
     print("Test: ", len(test_dict.keys()))
     print("=" * 50)
 
-    # Get dataloader for train, val and test: TODO
+    # Get dataloader for train, val and test
+    train_loader = get_dataloader(
+        lab_list=list(train_dict.keys()),
+        video_list=list(train_dict.values()),
+        metadata_path=dataset_configs['train_metadata_path'],
+        tracking_folder=dataset_configs['train_tracking_folder_path'],
+        annotation_folder=dataset_configs['train_annotation_folder_path'],
+        context_length=train_configs['context_length'],
+        batch_size=train_configs['batch_size'],
+        overlap_frames=train_configs['overlap_frames'],
+        skip_missing=train_configs['skip_missing'],
+        pickle_dir=dataset_configs['dataset_index_dir'],
+        subset_name='train',
+        force_rebuild=dataset_configs['force_index_rebuild'],
+        shuffle=True
+    )
+    val_loader = get_dataloader(
+        lab_list=list(val_dict.keys()),
+        video_list=list(val_dict.values()),
+        metadata_path=dataset_configs['train_metadata_path'],
+        tracking_folder=dataset_configs['train_tracking_folder_path'],
+        annotation_folder=dataset_configs['train_annotation_folder_path'],
+        context_length=train_configs['context_length'],
+        batch_size=train_configs['batch_size'],
+        overlap_frames=train_configs['overlap_frames'],
+        skip_missing=train_configs['skip_missing'],
+        pickle_dir=dataset_configs['dataset_index_dir'],
+        subset_name='val',
+        force_rebuild=dataset_configs['force_index_rebuild'],
+        shuffle=False
+    )
+    test_loader = get_dataloader(
+        lab_list=list(test_dict.keys()),
+        video_list=list(test_dict.values()),
+        metadata_path=dataset_configs['train_metadata_path'],
+        tracking_folder=dataset_configs['test_tracking_folder_path'],
+        annotation_folder=dataset_configs['train_annotation_folder_path'],
+        context_length=train_configs['context_length'],
+        batch_size=train_configs['batch_size'],
+        overlap_frames=train_configs['overlap_frames'],
+        skip_missing=train_configs['skip_missing'],
+        pickle_dir=dataset_configs['dataset_index_dir'],
+        subset_name='test',
+        force_rebuild=dataset_configs['force_index_rebuild'],
+        shuffle=False
+    )
+    print("Dataloaders created successfully!")
+    for batch in train_loader:
+        print("Sample batch from train loader - ", batch)
+        break
+
 
 
 def main():

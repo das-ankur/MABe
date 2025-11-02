@@ -44,12 +44,12 @@ class VideoSegmentsDataset(Dataset):
         metadata_path,
         tracking_folder,
         annotation_folder,
-        context_length=16,
-        overlap_frames=8,
-        skip_missing=True,
-        pickle_dir="dumps/data_segments",
-        subset_name="train",
-        force_rebuild=False,
+        context_length,
+        overlap_frames,
+        skip_missing,
+        pickle_dir,
+        subset_name,
+        force_rebuild=False
     ):
         assert len(lab_list) == len(video_list), "lab_list and video_list must be parallel lists"
         assert 0 <= overlap_frames < context_length, "overlap_frames must satisfy 0 <= overlap < context_length"

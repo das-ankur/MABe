@@ -4,3 +4,5 @@ sample_submission_path: datasets\sample_submission.csv
 train_tracking_folder_path: datasets\train_tracking
 train_annotation_folder_path: datasets\train_annotation
 test_tracking_folder_path: datasets\test_tracking
+dataset_index_dir: datasets/dumps
+force_index_rebuild: false

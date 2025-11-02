@@ -11,9 +11,13 @@ def get_dataloader(
     metadata_path,
     tracking_folder,
     annotation_folder,
-    context_length=16,
-    batch_size=8,
-    overlap_frames=4,
+    context_length,
+    batch_size,
+    overlap_frames,
+    skip_missing,
+    pickle_dir,
+    subset_name,
+    force_rebuild,
     num_workers=None,
     pin_memory=True,
     shuffle=True
@@ -54,7 +58,11 @@ def get_dataloader(
         tracking_folder=tracking_folder,
         annotation_folder=annotation_folder,
         context_length=context_length,
-        overlap_frames=overlap_frames
+        overlap_frames=overlap_frames,
+        skip_missing=skip_missing,
+        pickle_dir=pickle_dir, 
+        subset_name=subset_name,
+        force_rebuild=force_rebuild
     )
 
     dataloader = DataLoader(
