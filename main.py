@@ -5,7 +5,7 @@ import yaml
 import json
 import pandas as pd
 from tqdm import tqdm
-from src.dataset import split_multilabel_actions, get_dataloader
+from src.dataset import filter_valid_data, split_multilabel_actions, get_dataloader
 from src.train import train_model
 
 
@@ -28,12 +28,19 @@ def _train(dataset_configs_path: str, train_configs_path: str):
     else:
         print(train_configs)
     print("=" * 50)
-    
-    # Create action and files map
-    annotation_files = glob(os.path.join(dataset_configs['train_annotation_folder_path'], '**', '**.parquet'))
-    print("Total annotation files found: ", len(annotation_files))
 
-    # Create action file map from the annotation files
+    # Filter only valid files having both tracking and annotation data
+    valid_file_ids = filter_valid_data(
+        tracking_folder_path=dataset_configs['train_tracking_folder_path'],
+        annotation_folder_path=dataset_configs['train_annotation_folder_path']
+    )
+    print("Total valid files with both tracking and annotation data: ", len(valid_file_ids))
+
+    # Create action and files map
+    annotation_files = [os.path.join(dataset_configs['train_annotation_folder_path'], fid) for fid in valid_file_ids]
+    all_annotation_files = glob(os.path.join(dataset_configs['train_annotation_folder_path'], '**', '*.parquet'), recursive=True)
+    print("Valid annotation files found: ", len(annotation_files))
+
     action_files_list = {}
     for file_path in tqdm(annotation_files, desc="Processing annotation files", total=len(annotation_files)):
         df = pd.read_parquet(file_path)
@@ -115,7 +122,7 @@ def _train(dataset_configs_path: str, train_configs_path: str):
         lab_list=list(test_dict.keys()),
         video_list=list(test_dict.values()),
         metadata_path=dataset_configs['train_metadata_path'],
-        tracking_folder=dataset_configs['test_tracking_folder_path'],
+        tracking_folder=dataset_configs['train_tracking_folder_path'],
         annotation_folder=dataset_configs['train_annotation_folder_path'],
         context_length=train_configs['context_length'],
         batch_size=train_configs['batch_size'],
@@ -126,6 +133,7 @@ def _train(dataset_configs_path: str, train_configs_path: str):
         force_rebuild=dataset_configs['force_index_rebuild'],
         shuffle=False
     )
+    
     print("Dataloaders created successfully!")
     for batch in train_loader:
         print("Sample batch from train loader - ", batch)

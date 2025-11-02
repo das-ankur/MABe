@@ -1,10 +1,9 @@
-import os
-import glob
+from pathlib import Path
 import pandas as pd
 
 
 
-def filter_valid_data(metadata_path: str, tracking_folder_path: str, annotation_folder_path: str):
+def filter_valid_data(tracking_folder_path: str, annotation_folder_path: str):
     """
     Filters the dataset to include only valid data which has available annotations.
 
@@ -22,17 +21,7 @@ def filter_valid_data(metadata_path: str, tracking_folder_path: str, annotation_
     pd.DataFrame
         Filtered DataFrame containing only valid data entries.
     """
-    meta_df = pd.read_csv(metadata_path)
-    lab_ids = os.listdir(tracking_folder_path)
-    valid_lab_ids = set(lab_ids).intersection(set(meta_df['lab_id'].unique().tolist()))
-    valid_videos_per_lab = {}
-    for lab_id in valid_lab_ids:
-        tracking_files = glob.glob(os.path.join(tracking_folder_path, lab_id, '*.parquet'))
-        annotation_files = glob.glob(os.path.join(annotation_folder_path, lab_id, '*.parquet'))
-        valid_videos = set(
-            os.path.splitext(os.path.basename(f))[0] for f in annotation_files
-        ).intersection(
-            set(os.path.splitext(os.path.basename(f))[0] for f in tracking_files)
-        )
-        valid_videos_per_lab[lab_id] = valid_videos
-    return valid_videos_per_lab
+    tracking_files = [str(p.relative_to(tracking_folder_path)) for p in Path(tracking_folder_path).rglob("*.parquet")]
+    annotation_files = [str(p.relative_to(annotation_folder_path)) for p in Path(annotation_folder_path).rglob("*.parquet")]
+    valid_files_set = set(tracking_files).intersection(set(annotation_files))
+    return list(valid_files_set)

@@ -89,7 +89,7 @@ def train_model(
     n_epochs: int = 10,
     grad_clip: Optional[float] = None,
     amp: bool = False,
-    validate_every: int = 1,
+    validate_every_n_epochs: int = 1,
     checkpoint_path: Optional[str] = None,
     checkpoint_monitor: str = "f1_micro",  # metric to maximize on val
     checkpoint_mode: str = "max",          # max or min
@@ -180,7 +180,7 @@ def train_model(
         history["train"].append(train_metrics)
 
         # Validate
-        if (epoch % validate_every) == 0:
+        if (epoch % validate_every_n_epochs) == 0:
             val_metrics, _, _ = evaluate_epoch(
                 model=model,
                 dataloader=val_loader,

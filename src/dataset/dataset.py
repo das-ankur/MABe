@@ -92,15 +92,15 @@ class VideoSegmentsDataset(Dataset):
     @staticmethod
     def _compute_segments_for_video(args):
         lab_id, vid, tracking_folder, annotation_folder, context_length, stride, skip_missing = args
-        tracking_path = os.path.join(tracking_folder, lab_id, f"{vid}.parquet")
-        annotation_path = os.path.join(annotation_folder, lab_id, f"{vid}.parquet")
+        tracking_path = os.path.abspath(os.path.join(tracking_folder, lab_id, f"{vid}.parquet"))
+        annotation_path = os.path.abspath(os.path.join(annotation_folder, lab_id, f"{vid}.parquet"))
 
         if not os.path.exists(tracking_path) or not os.path.exists(annotation_path):
             msg = f"Skipping video {vid} in lab {lab_id}: "
             if not os.path.exists(tracking_path):
-                msg += "tracking file missing. "
+                msg += f"tracking file missing at {tracking_path}. "
             if not os.path.exists(annotation_path):
-                msg += "annotation file missing."
+                msg += f"annotation file missing at {annotation_path}."
             if skip_missing:
                 warnings.warn(msg)
                 return []  # skip this video
