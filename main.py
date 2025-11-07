@@ -4,8 +4,13 @@ import argparse
 import yaml
 import json
 import pandas as pd
+import torch
 from tqdm import tqdm
 from src.dataset import filter_valid_data, split_multilabel_actions, get_dataloader
+from src.model import MABeEncoder
+from src.optimizer import get_adam_optimizer
+from src.loss_function import BCELoss
+from src.evals import MultiLabelEvaluator
 from src.train import train_model
 
 
@@ -118,26 +123,41 @@ def _train(dataset_configs_path: str, train_configs_path: str):
         force_rebuild=dataset_configs['force_index_rebuild'],
         shuffle=False
     )
-    test_loader = get_dataloader(
-        lab_list=list(test_dict.keys()),
-        video_list=list(test_dict.values()),
-        metadata_path=dataset_configs['train_metadata_path'],
-        tracking_folder=dataset_configs['train_tracking_folder_path'],
-        annotation_folder=dataset_configs['train_annotation_folder_path'],
-        context_length=train_configs['context_length'],
-        batch_size=train_configs['batch_size'],
-        overlap_frames=train_configs['overlap_frames'],
-        skip_missing=train_configs['skip_missing'],
-        pickle_dir=dataset_configs['dataset_index_dir'],
-        subset_name='test',
-        force_rebuild=dataset_configs['force_index_rebuild'],
-        shuffle=False
-    )
+    # test_loader = get_dataloader(
+    #     lab_list=list(test_dict.keys()),
+    #     video_list=list(test_dict.values()),
+    #     metadata_path=dataset_configs['train_metadata_path'],
+    #     tracking_folder=dataset_configs['train_tracking_folder_path'],
+    #     annotation_folder=dataset_configs['train_annotation_folder_path'],
+    #     context_length=train_configs['context_length'],
+    #     batch_size=train_configs['batch_size'],
+    #     overlap_frames=train_configs['overlap_frames'],
+    #     skip_missing=train_configs['skip_missing'],
+    #     pickle_dir=dataset_configs['dataset_index_dir'],
+    #     subset_name='test',
+    #     force_rebuild=dataset_configs['force_index_rebuild'],
+    #     shuffle=False
+    # )
     
-    print("Dataloaders created successfully!")
-    for batch in train_loader:
-        print("Sample batch from train loader - ", batch)
-        break
+    # Get the model
+    model = MABeEncoder()
+
+    # Get the evaluator
+    evaluator = MultiLabelEvaluator()
+
+    # Start training
+    train_history = train_model(
+        model=model,
+        train_loader=train_loader,
+        val_loader=val_loader,
+        optimizer=get_adam_optimizer(),
+        loss_fn=BCELoss(),
+        evaluator=evaluator,
+        device=torch.device("cuda" if torch.cuda.is_available() else "cpu"),
+        n_epochs=2,
+        checkpoint_path='dumps'
+    )
+    return train_history
 
 
 

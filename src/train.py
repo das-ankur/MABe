@@ -85,7 +85,6 @@ def train_model(
     optimizer: torch.optim.Optimizer,
     loss_fn: Callable,
     evaluator,
-    device: Optional[torch.device] = None,
     n_epochs: int = 10,
     grad_clip: Optional[float] = None,
     amp: bool = False,
@@ -98,7 +97,9 @@ def train_model(
     Full training loop. Returns history dict with train & val metrics per epoch.
     """
 
-    device = device or (torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu"))
+    device_name = 'cuda' if torch.cuda.is_available() else 'cpu'
+    device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+    print(f"{device_name} is initialised to train the model.")
     model.to(device)
 
     history = {
