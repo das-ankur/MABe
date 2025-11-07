@@ -2,7 +2,12 @@
 .venv
 
 # Dataset
-datasets
+datasets/test_tracking
+datasets/train_annotation
+datasets/train_tracking
+datasets/sample_submission.csv
+datasets/test.csv
+datasets/train.csv
 
 # Kaggle Credentials
 kaggle.json
