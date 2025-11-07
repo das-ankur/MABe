@@ -1,6 +1,6 @@
-context_length: 100
+context_length: 8
 batch_size: 4
-overlap_frames: 8
+overlap_frames: 2
 skip_missing: true
 optimizer:
   name: Adam

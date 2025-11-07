@@ -145,15 +145,17 @@ def _train(dataset_configs_path: str, train_configs_path: str):
     # Get the evaluator
     evaluator = MultiLabelEvaluator()
 
+    # Get the optimizer
+    optimizer = get_adam_optimizer(model)
+
     # Start training
     train_history = train_model(
         model=model,
         train_loader=train_loader,
         val_loader=val_loader,
-        optimizer=get_adam_optimizer(),
+        optimizer=optimizer,
         loss_fn=BCELoss(),
         evaluator=evaluator,
-        device=torch.device("cuda" if torch.cuda.is_available() else "cpu"),
         n_epochs=2,
         checkpoint_path='dumps'
     )
