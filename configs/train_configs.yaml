@@ -1,6 +1,6 @@
-context_length: 8
+context_length: 1000
 batch_size: 4
-overlap_frames: 2
+overlap_frames: 10
 skip_missing: true
 optimizer:
   name: Adam
@@ -19,7 +19,7 @@ loss_function:
   name: BCELoss
   loss_function_params:
     reduction: mean
-n_epochs: 3
+n_epochs: 5
 grad_clip: null
 amp: false
 checkpoint_path: model_checkpoints

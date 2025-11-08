@@ -43,7 +43,6 @@ def _train(dataset_configs_path: str, train_configs_path: str):
 
     # Create action and files map
     annotation_files = [os.path.join(dataset_configs['train_annotation_folder_path'], fid) for fid in valid_file_ids]
-    all_annotation_files = glob(os.path.join(dataset_configs['train_annotation_folder_path'], '**', '*.parquet'), recursive=True)
     print("Valid annotation files found: ", len(annotation_files))
 
     action_files_list = {}
@@ -149,17 +148,17 @@ def _train(dataset_configs_path: str, train_configs_path: str):
     optimizer = get_adam_optimizer(model)
 
     # Start training
-    train_history = train_model(
-        model=model,
-        train_loader=train_loader,
-        val_loader=val_loader,
-        optimizer=optimizer,
-        loss_fn=BCELoss(),
-        evaluator=evaluator,
-        n_epochs=2,
-        checkpoint_path='dumps'
-    )
-    return train_history
+    # train_history = train_model(
+    #     model=model,
+    #     train_loader=train_loader,
+    #     val_loader=val_loader,
+    #     optimizer=optimizer,
+    #     loss_fn=BCELoss(),
+    #     evaluator=evaluator,
+    #     n_epochs=2,
+    #     checkpoint_path='dumps'
+    # )
+    # return train_history
 
 
 

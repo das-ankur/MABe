@@ -30,9 +30,9 @@ def evaluate_epoch(
         if isinstance(batch, (list, tuple)) and len(batch) >= 2:
             inputs, targets = batch[0], batch[1]
         elif isinstance(batch, dict):
-            inputs, targets = batch['inputs'], batch['targets']
+            inputs, targets = batch['bodyparts'], batch['actions']
         else:
-            raise ValueError("Dataloader must return (inputs, targets) or a dict with 'inputs'/'targets'.")
+            raise ValueError("Dataloader must return (inputs, targets) or a dict with 'bodyparts'/'actions'.")
 
         inputs = inputs.to(device)
         targets = targets.to(device)
@@ -127,9 +127,9 @@ def train_model(
             if isinstance(batch, (list, tuple)) and len(batch) >= 2:
                 inputs, targets = batch[0], batch[1]
             elif isinstance(batch, dict):
-                inputs, targets = batch['inputs'], batch['targets']
+                inputs, targets = batch['bodyparts'], batch['actions']
             else:
-                raise ValueError("Dataloader must return (inputs, targets) or a dict with 'inputs'/'targets'.")
+                raise ValueError("Dataloader must return (bodyparts, actions) or a dict with 'bodyparts'/'actions'.")
 
             inputs = inputs.to(device)
             targets = targets.to(device)
