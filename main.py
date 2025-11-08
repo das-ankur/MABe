@@ -111,6 +111,7 @@ def _train(dataset_configs_path: str, train_configs_path: str):
     print("Train: ", len(train_dict.keys()))
     print("Val: ", len(val_dict.keys()))
     print("Test: ", len(test_dict.keys()))
+    print("=" * 50)
 
     # Get dataloader for train, val and test
     train_loader = get_dataloader(
@@ -144,6 +145,11 @@ def _train(dataset_configs_path: str, train_configs_path: str):
         shuffle=False
     )
     
+    # Build segments only and exit
+    if dataset_configs.get('preprocessing_only', False):
+        print("Preprocessing only mode is enabled. Exiting after building segments.")
+        return
+
     # Get the model
     model = MABeEncoder(**train_configs['model'])
 
