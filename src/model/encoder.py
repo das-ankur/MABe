@@ -4,6 +4,7 @@ import torch.nn.functional as F
 from typing import Optional
 
 
+
 def _local_attention_mask(seq_len: int, local_k: int, device=None, dtype=torch.bool):
     """Mask where True = allowed; each token attends to ±local_k neighbors."""
     idx = torch.arange(seq_len, device=device)
@@ -18,7 +19,8 @@ class LocalGlobalMultiheadAttention(nn.Module):
       - 1 head is global (full attention)
       - others are local (±local_k)
     """
-    def __init__(self, embed_dim: int, num_heads: int, local_k: int, global_heads: int = 1, dropout: float = 0.1):
+    def __init__(self, embed_dim: int, num_heads: int, local_k: int,
+                 global_heads: int = 1, dropout: float = 0.1):
         super().__init__()
         assert embed_dim % num_heads == 0, "embed_dim must be divisible by num_heads"
         self.embed_dim = embed_dim
@@ -74,7 +76,8 @@ class LocalGlobalMultiheadAttention(nn.Module):
 
 class TransformerEncoderBlock(nn.Module):
     """Standard Transformer encoder block with attention + FFN + dropout + residual + layernorm."""
-    def __init__(self, embed_dim: int, num_heads: int, local_k: int, global_heads: int = 1, dropout: float = 0.1):
+    def __init__(self, embed_dim: int, num_heads: int, local_k: int,
+                 global_heads: int = 1, dropout: float = 0.1):
         super().__init__()
         self.attn = LocalGlobalMultiheadAttention(embed_dim, num_heads, local_k, global_heads, dropout)
         self.ln1 = nn.LayerNorm(embed_dim)
@@ -106,7 +109,7 @@ class MABeEncoder(nn.Module):
     """
     Encoder-only transformer for multi-label classification.
       - Input: (B, n, input_dim)
-      - Output: (B, n, n_outputs) after sigmoid
+      - Output: (B, n, n_outputs)
     """
     def __init__(
         self,
@@ -151,16 +154,16 @@ class MABeEncoder(nn.Module):
     def forward(self, x, attn_mask: Optional[torch.Tensor] = None):
         """
         x: (B, n, input_dim)
-        Returns: (B, n, n_outputs) after sigmoid
+        Returns: (B, n, n_outputs)
         """
         B, n, _ = x.shape
         x = self.input_proj(x)
         x = self.pre_ffn(x)
 
-        # Removed positional embedding logic entirely
+        # No positional embeddings here
         x = self.dropout(x)
 
-        # Pass through encoder blocks
+        # Encoder blocks
         for block in self.blocks:
             x = block(x, attn_mask)
 
@@ -169,5 +172,4 @@ class MABeEncoder(nn.Module):
 
         # Project to output dimension
         logits = self.classifier(x)
-
         return logits
