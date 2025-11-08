@@ -160,13 +160,23 @@ def _train(dataset_configs_path: str, train_configs_path: str):
     # )
     
     # Get the model
-    model = MABeEncoder()
+    model = MABeEncoder(
+        embed_dim=train_configs['context_length'],
+        num_heads=train_configs['model']['num_heads']
+    )
 
     # Get the evaluator
     evaluator = MultiLabelEvaluator()
 
     # Get the optimizer
-    optimizer = get_adam_optimizer(model)
+    if train_configs['optimizer']['name'].lower().strip() == 'adam':
+        optimizer = get_adam_optimizer(model, **train_configs['optimizer']['optimizer_params'])
+    else:
+        raise NotImplementedError("Selected optimizer support isnt added yet.")
+    
+    # Get the loss function
+    if train_configs['loss_function']['name'].lower().strip() == 'bceloss':
+        loss_function = BCELoss(**train_configs['loss_function']['loss_function_params'])
 
     # Start training
     train_history = train_model(
@@ -174,7 +184,7 @@ def _train(dataset_configs_path: str, train_configs_path: str):
         train_loader=train_loader,
         val_loader=val_loader,
         optimizer=optimizer,
-        loss_fn=BCELoss(),
+        loss_fn=loss_function,
         evaluator=evaluator,
         n_epochs=2,
         checkpoint_path='dumps'
