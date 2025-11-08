@@ -161,7 +161,6 @@ def _train(dataset_configs_path: str, train_configs_path: str):
     
     # Get the model
     model = MABeEncoder(
-        embed_dim=train_configs['context_length'],
         num_heads=train_configs['model']['num_heads']
     )
 
