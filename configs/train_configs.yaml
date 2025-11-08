@@ -13,7 +13,7 @@ loss_function:
 model:
   embed_dim: 64
   num_heads: 4
-  n_hblocks: 3
+  n_blocks: 3
 n_epochs: 5
 grad_clip: null
 amp: false

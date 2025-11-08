@@ -115,7 +115,7 @@ def train_model(
             if not isinstance(batch, dict):
                 raise ValueError("Expected batch dict with keys: bodyparts, actions, mask")
 
-            inputs, targets, mask = batch["bodyparts"].to(device), batch["actions"].to(device), batch["mask"].to(device)
+            inputs, targets, mask = batch["bodyparts"].to(device), batch["actions"].to(device), batch["attention_mask"].to(device)
 
             optimizer.zero_grad()
             if amp:
