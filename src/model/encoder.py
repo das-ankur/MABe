@@ -4,7 +4,6 @@ import torch.nn.functional as F
 from typing import Optional
 
 
-
 def _local_attention_mask(seq_len: int, local_k: int, device=None, dtype=torch.bool):
     """Mask where True = allowed; each token attends to ±local_k neighbors."""
     idx = torch.arange(seq_len, device=device)
@@ -118,7 +117,6 @@ class MABeEncoder(nn.Module):
         n_blocks: int = 6,
         global_heads: int = 1,
         dropout: float = 0.2,
-        max_len: int = 512,
         n_outputs: int = 37
     ):
         super().__init__()
@@ -132,10 +130,6 @@ class MABeEncoder(nn.Module):
             nn.LayerNorm(embed_dim),
         )
 
-        # Learned positional encoding
-        self.pos_embed = nn.Parameter(torch.zeros(1, max_len, embed_dim))
-        nn.init.trunc_normal_(self.pos_embed, std=0.02)
-
         self.dropout = nn.Dropout(dropout)
 
         # Encoder blocks
@@ -146,7 +140,7 @@ class MABeEncoder(nn.Module):
 
         self.final_ln = nn.LayerNorm(embed_dim)
 
-        # 🔸 Projection for multi-label classification
+        # Projection for multi-label classification
         self.classifier = nn.Sequential(
             nn.Linear(embed_dim, embed_dim),
             nn.GELU(),
@@ -163,9 +157,7 @@ class MABeEncoder(nn.Module):
         x = self.input_proj(x)
         x = self.pre_ffn(x)
 
-        # Add learned positional embeddings
-        pos = self.pos_embed[:, :n, :]
-        x = x + pos
+        # Removed positional embedding logic entirely
         x = self.dropout(x)
 
         # Pass through encoder blocks
