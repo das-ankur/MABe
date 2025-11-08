@@ -6,3 +6,6 @@ train_annotation_folder_path: datasets\train_annotation
 test_tracking_folder_path: datasets\test_tracking
 dataset_index_dir: datasets/dumps
 force_index_rebuild: true
+force_dataset_split: true
+dataset_split_path: datasets/dataset_split.json
+split_seed: 42

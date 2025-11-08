@@ -34,62 +34,83 @@ def _train(dataset_configs_path: str, train_configs_path: str):
         print(train_configs)
     print("=" * 50)
 
-    # Filter only valid files having both tracking and annotation data
-    valid_file_ids = filter_valid_data(
-        tracking_folder_path=dataset_configs['train_tracking_folder_path'],
-        annotation_folder_path=dataset_configs['train_annotation_folder_path']
-    )
-    print("Total valid files with both tracking and annotation data: ", len(valid_file_ids))
+    # Split dataset by force
+    if dataset_configs.get('force_dataset_split', False) or not os.path.exists(dataset_configs['dataset_split_path']):
 
-    # Create action and files map
-    annotation_files = [os.path.join(dataset_configs['train_annotation_folder_path'], fid) for fid in valid_file_ids]
-    print("Valid annotation files found: ", len(annotation_files))
+        # Filter only valid files having both tracking and annotation data
+        valid_file_ids = filter_valid_data(
+            tracking_folder_path=dataset_configs['train_tracking_folder_path'],
+            annotation_folder_path=dataset_configs['train_annotation_folder_path']
+        )
+        print("Total valid files with both tracking and annotation data: ", len(valid_file_ids))
 
-    action_files_list = {}
-    for file_path in tqdm(annotation_files, desc="Processing annotation files", total=len(annotation_files)):
-        df = pd.read_parquet(file_path)
-        available_actions = df['action'].unique().tolist()
-        for action in available_actions:
-            if action in action_files_list:
-                action_files_list[action].append(file_path)
-            else:
-                action_files_list[action] = [file_path]
-    print("Found Actions: ", ', '.join(action_files_list.keys()))
-    print('=' * 50)
+        # Create action and files map
+        annotation_files = [os.path.join(dataset_configs['train_annotation_folder_path'], fid) for fid in valid_file_ids]
+        print("Valid annotation files found: ", len(annotation_files))
 
-    # Split the action files in different sets
-    split_sets = split_multilabel_actions(action_files_list)
-    print("Number of files in each set: ")
-    for split_name, split_list in split_sets.items():
-        print(split_name.title(), ": ", len(split_list))
-    print("=" * 50)
-    
-    # Get lab and video list for all sets
-    train_dict, val_dict, test_dict = {}, {}, {}
-    for split_name, split_list in split_sets.items():
-        for path in split_list:
-            path_parts = path.split(os.sep)
-            lab_id, video_id = path_parts[-2], os.path.splitext(path_parts[-1])[0]
-            if split_name == 'train':
-                if lab_id in train_dict:
-                    train_dict[lab_id].append(video_id)
+        action_files_list = {}
+        for file_path in tqdm(annotation_files, desc="Processing annotation files", total=len(annotation_files)):
+            df = pd.read_parquet(file_path)
+            available_actions = df['action'].unique().tolist()
+            for action in available_actions:
+                if action in action_files_list:
+                    action_files_list[action].append(file_path)
                 else:
-                    train_dict[lab_id] = [video_id]
-            elif split_name == 'val':
-                if lab_id in val_dict:
-                    val_dict[lab_id].append(video_id)
-                else:
-                    val_dict[lab_id] = [video_id]
-            elif split_name == 'test':
-                if lab_id in test_dict:
-                    test_dict[lab_id].append(video_id)
-                else:
-                    test_dict[lab_id] = [video_id]
+                    action_files_list[action] = [file_path]
+        print("Found Actions: ", ', '.join(action_files_list.keys()))
+        print('=' * 50)
+
+        # Split the action files in different sets
+        split_sets = split_multilabel_actions(action_files_list)
+        print("Number of files in each set: ")
+        for split_name, split_list in split_sets.items():
+            print(split_name.title(), ": ", len(split_list))
+        print("=" * 50)
+        
+        # Get lab and video list for all sets
+        train_dict, val_dict, test_dict = {}, {}, {}
+        for split_name, split_list in split_sets.items():
+            for path in split_list:
+                path_parts = path.split(os.sep)
+                lab_id, video_id = path_parts[-2], os.path.splitext(path_parts[-1])[0]
+                if split_name == 'train':
+                    if lab_id in train_dict:
+                        train_dict[lab_id].append(video_id)
+                    else:
+                        train_dict[lab_id] = [video_id]
+                elif split_name == 'val':
+                    if lab_id in val_dict:
+                        val_dict[lab_id].append(video_id)
+                    else:
+                        val_dict[lab_id] = [video_id]
+                elif split_name == 'test':
+                    if lab_id in test_dict:
+                        test_dict[lab_id].append(video_id)
+                    else:
+                        test_dict[lab_id] = [video_id]
+
+        # Saving the dataset splits
+        print("Saving the dataset splits: ")
+        split_dict = {
+            'train': train_dict,
+            'val': val_dict,
+            'test': test_dict
+        }
+        os.makedirs(os.path.dirname(dataset_configs['dataset_split_path']), exist_ok=True)
+        with open(dataset_configs['dataset_split_path'], 'w') as fp:
+            json.dump(split_dict, fp, indent=4)
+        print("=" * 50)
+    else:
+        with open(dataset_configs['dataset_split_path']) as fp:
+            split_dict = json.load(fp)
+        train_dict = split_dict['train']
+        valid_dict = split_dict['val']
+        test_dict = split_dict['test']
+
     print("Labs found in each set: ")
     print("Train: ", len(train_dict.keys()))
     print("Val: ", len(val_dict.keys()))
     print("Test: ", len(test_dict.keys()))
-    print("=" * 50)
 
     # Get dataloader for train, val and test
     train_loader = get_dataloader(
@@ -138,16 +159,16 @@ def _train(dataset_configs_path: str, train_configs_path: str):
     #     shuffle=False
     # )
     
-    # Get the model
-    model = MABeEncoder()
+    # # Get the model
+    # model = MABeEncoder()
 
-    # Get the evaluator
-    evaluator = MultiLabelEvaluator()
+    # # Get the evaluator
+    # evaluator = MultiLabelEvaluator()
 
-    # Get the optimizer
-    optimizer = get_adam_optimizer(model)
+    # # Get the optimizer
+    # optimizer = get_adam_optimizer(model)
 
-    # Start training
+    # # Start training
     # train_history = train_model(
     #     model=model,
     #     train_loader=train_loader,
@@ -158,6 +179,9 @@ def _train(dataset_configs_path: str, train_configs_path: str):
     #     n_epochs=2,
     #     checkpoint_path='dumps'
     # )
+    # print("Training History: ")
+    # print(json.dumps(train_history, indent=4))
+    
     # return train_history
 
 
