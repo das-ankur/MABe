@@ -6,7 +6,7 @@ from typing import Optional
 
 
 @torch.jit.script
-def _local_attention_mask(seq_len: int, local_k: int, device: Optional[torch.device] = None, dtype: torch.dtype = torch.bool):
+def _local_attention_mask(seq_len: int, local_k: int, device: Optional[torch.device] = None):
     """Mask where True = allowed; each token attends to ±local_k neighbors."""
     idx = torch.arange(seq_len, device=device)
     i = idx.unsqueeze(1)
@@ -42,47 +42,54 @@ class LocalGlobalMultiheadAttention(nn.Module):
         B, n, _ = x.shape
         device = x.device
 
-        # Compute all projections in parallel
+        # Compute projections
         q = self.q_proj(x)
         k = self.k_proj(x)
         v = self.v_proj(x)
 
-        # More efficient reshape using contiguous tensors
+        # Reshape for multi-head: (B, num_heads, n, head_dim)
         def reshape(t):
             return t.view(B, n, self.num_heads, self.head_dim).transpose(1, 2).contiguous()
-
         q, k, v = map(reshape, (q, k, v))
 
-        # Optimize matrix multiplication
-        scores = torch.baddbmm(
-            torch.empty(B, self.num_heads, n, n, dtype=q.dtype, device=device),
-            q,
-            k.transpose(-2, -1),
-            beta=0.0,
-            alpha=self.scale
-        )
+        # Attention scores: (B, num_heads, n, n)
+        scores = torch.matmul(q, k.transpose(-2, -1)) * self.scale
 
-        # Base mask
-        base_mask = torch.ones((n, n), dtype=torch.bool, device=device) if attn_mask is None else attn_mask.to(device)
-        local_mask = _local_attention_mask(n, self.local_k, device=device) if self.local_heads > 0 else None
+        # --- Build masks ---
+        # Base mask for local/global heads
+        base_mask = torch.ones((n, n), dtype=torch.bool, device=device)
+        if self.local_heads > 0:
+            local_mask = _local_attention_mask(n, self.local_k, device=device)
+            masks = []
+            for h in range(self.num_heads):
+                if h < self.global_heads:
+                    masks.append(base_mask)
+                else:
+                    masks.append(base_mask & local_mask)
+            base_mask = torch.stack(masks, dim=0).unsqueeze(0)  # (1, num_heads, n, n)
+        else:
+            base_mask = base_mask.unsqueeze(0).unsqueeze(0)  # (1, 1, n, n)
 
-        # Create per-head mask
-        masks = []
-        for h in range(self.num_heads):
-            if h < self.global_heads:
-                masks.append(base_mask)
-            else:
-                masks.append(base_mask & local_mask)
-        masks = torch.stack(masks, dim=0).unsqueeze(0)  # (1, num_heads, n, n)
+        # Batch padding mask: (B, n) -> (B, 1, 1, n)
+        if attn_mask is not None:
+            padding_mask = attn_mask[:, None, None, :]  # True = valid token
+            base_mask = base_mask & padding_mask  # broadcast to (B, num_heads, n, n)
+            base_mask = base_mask.expand(B, -1, -1, -1)  # make batch dimension explicit
+        else:
+            base_mask = base_mask.expand(B, -1, -1, -1)
 
-        scores = scores.masked_fill(~masks, float('-inf'))
+        # Apply mask
+        scores = scores.masked_fill(~base_mask, float('-inf'))
+
+        # Softmax and dropout
         attn = torch.softmax(scores, dim=-1)
         attn = self.dropout(attn)
-        out = torch.matmul(attn, v)
 
+        # Attention output
+        out = torch.matmul(attn, v)
         out = out.transpose(1, 2).contiguous().view(B, n, self.embed_dim)
         return self.out_proj(out)
-    
+
 
 class TransformerEncoderBlock(nn.Module):
     """Standard Transformer encoder block with attention + FFN + dropout + residual + layernorm."""
@@ -136,7 +143,7 @@ class MABeEncoder(nn.Module):
         self.embed_dim = embed_dim
         self.input_proj = nn.Linear(input_dim, embed_dim)
 
-        # Pre-attention FFN (only once)
+        # Pre-attention FFN
         self.pre_ffn = nn.Sequential(
             nn.Linear(embed_dim, embed_dim),
             nn.GELU(),
@@ -164,22 +171,16 @@ class MABeEncoder(nn.Module):
     def forward(self, x, attn_mask: Optional[torch.Tensor] = None):
         """
         x: (B, n, input_dim)
+        attn_mask: (B, n) True = valid token
         Returns: (B, n, n_outputs)
         """
-        B, n, _ = x.shape
         x = self.input_proj(x)
         x = self.pre_ffn(x)
-
-        # No positional embeddings here
         x = self.dropout(x)
 
-        # Encoder blocks
         for block in self.blocks:
             x = block(x, attn_mask)
 
-        # Final normalization
         x = self.final_ln(x)
-
-        # Project to output dimension
         logits = self.classifier(x)
         return logits

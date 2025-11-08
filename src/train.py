@@ -130,7 +130,7 @@ def train_model(
                 scaler.step(optimizer)
                 scaler.update()
             else:
-                logits = model(inputs, attn_mask=mask)
+                logits = model(inputs, attn_mask=mask.bool())
                 loss_raw = loss_fn(logits, targets)
                 masked_loss = (loss_raw * mask.unsqueeze(-1)).sum() / mask.sum()
                 masked_loss.backward()
