@@ -5,6 +5,8 @@ import pandas as pd
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 from src.scaling import compute_global_min_max, min_max_scaling
+import tempfile
+import uuid
 
 
 # ---------- Global LRU Caches (size = 3) ----------
@@ -153,10 +155,41 @@ def load_video_data(
     num_actions = len(action_dict)
     num_frames_requested = stop_frame - start_frame + 1
 
-    bodyparts_matrix = np.full((num_frames_requested, len(expected_mice) * num_bodyparts * 2), -1.0, dtype=np.float32)
-    action_matrix = np.zeros((num_frames_requested, num_actions), dtype=np.float32)
-    agent_matrix = np.zeros((num_frames_requested, num_actions, len(expected_mice)), dtype=np.float32)
-    target_matrix = np.zeros((num_frames_requested, num_actions, len(expected_mice)), dtype=np.float32)
+    # Create memory-mapped arrays in a cache directory
+    cache_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'cache')
+    os.makedirs(cache_dir, exist_ok=True)
+    
+    # Generate unique filenames for this operation
+    unique_id = str(uuid.uuid4())
+    bp_filename = os.path.join(cache_dir, f'bodyparts_{unique_id}.npy')
+    act_filename = os.path.join(cache_dir, f'actions_{unique_id}.npy')
+    agent_filename = os.path.join(cache_dir, f'agents_{unique_id}.npy')
+    target_filename = os.path.join(cache_dir, f'targets_{unique_id}.npy')
+
+    try:
+        # Create memory-mapped arrays
+        bodyparts_matrix = np.memmap(bp_filename, dtype=np.float32, mode='w+', 
+                                   shape=(num_frames_requested, len(expected_mice) * num_bodyparts * 2))
+        bodyparts_matrix.fill(-1.0)
+        
+        action_matrix = np.memmap(act_filename, dtype=np.float32, mode='w+', 
+                                shape=(num_frames_requested, num_actions))
+        action_matrix.fill(0)
+        
+        agent_matrix = np.memmap(agent_filename, dtype=np.float32, mode='w+', 
+                               shape=(num_frames_requested, num_actions, len(expected_mice)))
+        agent_matrix.fill(0)
+        
+        target_matrix = np.memmap(target_filename, dtype=np.float32, mode='w+', 
+                                shape=(num_frames_requested, num_actions, len(expected_mice)))
+        target_matrix.fill(0)
+    except:
+        # Fallback to regular numpy arrays if memory mapping fails
+        print("⚠️ Memory mapping failed, falling back to regular numpy arrays")
+        bodyparts_matrix = np.full((num_frames_requested, len(expected_mice) * num_bodyparts * 2), -1.0, dtype=np.float32)
+        action_matrix = np.zeros((num_frames_requested, num_actions), dtype=np.float32)
+        agent_matrix = np.zeros((num_frames_requested, num_actions, len(expected_mice)), dtype=np.float32)
+        target_matrix = np.zeros((num_frames_requested, num_actions, len(expected_mice)), dtype=np.float32)
 
     # ---------- 7️⃣ Frame processing ----------
     frames_range = np.arange(start_frame, stop_frame + 1)
@@ -222,11 +255,22 @@ def load_video_data(
     valid_frames = ~(bodyparts_matrix == -1.0).all(axis=1)
     attention_mask = valid_frames.astype(np.float32)  # 1.0 for valid, 0.0 for invalid
 
-    # ---------- 🔟 Return ----------
-    return (
-        bodyparts_matrix,
-        attention_mask,
-        action_matrix,
-        agent_matrix,
-        target_matrix
-    )
+    # ---------- 🔟 Return and Cleanup ----------
+    try:
+        # Convert memmap arrays to numpy arrays for return
+        return (
+            np.array(bodyparts_matrix),
+            attention_mask,
+            np.array(action_matrix),
+            np.array(agent_matrix),
+            np.array(target_matrix)
+        )
+    finally:
+        # Clean up memmap files
+        try:
+            os.unlink(bp_filename)
+            os.unlink(act_filename)
+            os.unlink(agent_filename)
+            os.unlink(target_filename)
+        except:
+            pass  # Ignore cleanup errors
