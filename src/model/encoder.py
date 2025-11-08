@@ -5,7 +5,8 @@ from typing import Optional
 
 
 
-def _local_attention_mask(seq_len: int, local_k: int, device=None, dtype=torch.bool):
+@torch.jit.script
+def _local_attention_mask(seq_len: int, local_k: int, device: Optional[torch.device] = None, dtype: torch.dtype = torch.bool):
     """Mask where True = allowed; each token attends to ±local_k neighbors."""
     idx = torch.arange(seq_len, device=device)
     i = idx.unsqueeze(1)
@@ -41,16 +42,25 @@ class LocalGlobalMultiheadAttention(nn.Module):
         B, n, _ = x.shape
         device = x.device
 
+        # Compute all projections in parallel
         q = self.q_proj(x)
         k = self.k_proj(x)
         v = self.v_proj(x)
 
+        # More efficient reshape using contiguous tensors
         def reshape(t):
-            return t.view(B, n, self.num_heads, self.head_dim).transpose(1, 2)
+            return t.view(B, n, self.num_heads, self.head_dim).transpose(1, 2).contiguous()
 
         q, k, v = map(reshape, (q, k, v))
 
-        scores = torch.matmul(q, k.transpose(-2, -1)) * self.scale
+        # Optimize matrix multiplication
+        scores = torch.baddbmm(
+            torch.empty(B, self.num_heads, n, n, dtype=q.dtype, device=device),
+            q,
+            k.transpose(-2, -1),
+            beta=0.0,
+            alpha=self.scale
+        )
 
         # Base mask
         base_mask = torch.ones((n, n), dtype=torch.bool, device=device) if attn_mask is None else attn_mask.to(device)

@@ -216,9 +216,16 @@ def load_video_data(
                     if target in expected_mice:
                         target_matrix[i, action_index, target - 1] = 1.0
 
+     # ----------  Compute Attention Mask ----------
+    # A frame is valid if it has at least one non -1.0 coordinate
+    # bodyparts_matrix: (num_frames_requested, num_mice * num_bodyparts * 2)
+    valid_frames = ~(bodyparts_matrix == -1.0).all(axis=1)
+    attention_mask = valid_frames.astype(np.float32)  # 1.0 for valid, 0.0 for invalid
+
     # ---------- 🔟 Return ----------
     return (
         bodyparts_matrix,
+        attention_mask,
         action_matrix,
         agent_matrix,
         target_matrix

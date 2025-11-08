@@ -10,7 +10,7 @@ class MultiLabelLoss(nn.Module):
     Base class for multi-label classification loss.
     Model outputs logits.
     """
-    def __init__(self, reduction='mean'):
+    def __init__(self, reduction='none'):
         super().__init__()
         self.reduction = reduction
 
@@ -20,7 +20,7 @@ class MultiLabelLoss(nn.Module):
 
 # BCE Loss
 class BCELoss(MultiLabelLoss):
-    def __init__(self, reduction='mean'):
+    def __init__(self, reduction='none'):
         super().__init__(reduction)
         self.loss_fn = nn.BCEWithLogitsLoss(reduction=reduction)
 
@@ -30,7 +30,7 @@ class BCELoss(MultiLabelLoss):
 
 # Weighted BCE Loss
 class WeightedBCELoss(MultiLabelLoss):
-    def __init__(self, pos_weight: torch.Tensor, reduction='mean'):
+    def __init__(self, pos_weight: torch.Tensor, reduction='none'):
         """
         pos_weight: torch.Tensor of shape (n_classes,)
         """
@@ -43,7 +43,7 @@ class WeightedBCELoss(MultiLabelLoss):
 
 # Focal Loss
 class FocalLoss(MultiLabelLoss):
-    def __init__(self, alpha=0.25, gamma=2.0, reduction='mean'):
+    def __init__(self, alpha=0.25, gamma=2.0, reduction='none'):
         super().__init__(reduction)
         self.alpha = alpha
         self.gamma = gamma

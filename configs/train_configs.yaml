@@ -1,6 +1,6 @@
-context_length: 1000
+context_length: 4000
 batch_size: 4
-overlap_frames: 10
+overlap_frames: 100
 skip_missing: true
 optimizer:
   name: Adam
@@ -9,11 +9,11 @@ optimizer:
 loss_function:
   name: BCELoss
   loss_function_params:
-    reduction: mean
+    reduction: 'none'
 model:
   embed_dim: 64
-  num_heads: 2
-  n_hblocks: 2
+  num_heads: 4
+  n_hblocks: 3
 n_epochs: 5
 grad_clip: null
 amp: false

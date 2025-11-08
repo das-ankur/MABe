@@ -170,6 +170,7 @@ class VideoSegmentsDataset(Dataset):
 
         (
             bodyparts_matrix,
+            attention_mask,
             action_matrix,
             agent_matrix,
             target_matrix,
@@ -185,6 +186,7 @@ class VideoSegmentsDataset(Dataset):
 
         return {
             "bodyparts": torch.from_numpy(np.asarray(bodyparts_matrix)).float(),
+            "attention_mask": torch.from_numpy(np.asarray(attention_mask)).float(),
             "actions": torch.from_numpy(np.asarray(action_matrix)).float(),
             "agents": torch.from_numpy(np.asarray(agent_matrix)).float(),
             "targets": torch.from_numpy(np.asarray(target_matrix)).float(),
