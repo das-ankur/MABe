@@ -104,7 +104,7 @@ def _train(dataset_configs_path: str, train_configs_path: str):
         with open(dataset_configs['dataset_split_path']) as fp:
             split_dict = json.load(fp)
         train_dict = split_dict['train']
-        valid_dict = split_dict['val']
+        val_dict = split_dict['val']
         test_dict = split_dict['test']
 
     print("Labs found in each set: ")
