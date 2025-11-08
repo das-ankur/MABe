@@ -61,7 +61,7 @@ def _train(dataset_configs_path: str, train_configs_path: str):
         print('=' * 50)
 
         # Split the action files in different sets
-        split_sets = split_multilabel_actions(action_files_list)
+        split_sets = split_multilabel_actions(action_files_list, seed=dataset_configs['split_seed'])
         print("Number of files in each set: ")
         for split_name, split_list in split_sets.items():
             print(split_name.title(), ": ", len(split_list))
@@ -159,31 +159,30 @@ def _train(dataset_configs_path: str, train_configs_path: str):
     #     shuffle=False
     # )
     
-    # # Get the model
-    # model = MABeEncoder()
+    # Get the model
+    model = MABeEncoder()
 
-    # # Get the evaluator
-    # evaluator = MultiLabelEvaluator()
+    # Get the evaluator
+    evaluator = MultiLabelEvaluator()
 
-    # # Get the optimizer
-    # optimizer = get_adam_optimizer(model)
+    # Get the optimizer
+    optimizer = get_adam_optimizer(model)
 
-    # # Start training
-    # train_history = train_model(
-    #     model=model,
-    #     train_loader=train_loader,
-    #     val_loader=val_loader,
-    #     optimizer=optimizer,
-    #     loss_fn=BCELoss(),
-    #     evaluator=evaluator,
-    #     n_epochs=2,
-    #     checkpoint_path='dumps'
-    # )
-    # print("Training History: ")
-    # print(json.dumps(train_history, indent=4))
+    # Start training
+    train_history = train_model(
+        model=model,
+        train_loader=train_loader,
+        val_loader=val_loader,
+        optimizer=optimizer,
+        loss_fn=BCELoss(),
+        evaluator=evaluator,
+        n_epochs=2,
+        checkpoint_path='dumps'
+    )
+    print("Training History: ")
+    print(json.dumps(train_history, indent=4))
     
-    # return train_history
-
+    return train_history
 
 
 def main():
