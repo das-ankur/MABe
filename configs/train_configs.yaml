@@ -11,7 +11,7 @@ loss_function:
   loss_function_params:
     reduction: mean
 model:
-  num_heads: 3
+  num_heads: 2
 n_epochs: 5
 grad_clip: null
 amp: false
