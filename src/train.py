@@ -121,8 +121,8 @@ def train_model(
             optimizer.zero_grad()
             if amp:
                 with autocast():
-                    logits = model(inputs, attn_mask=mask)
                     valid_mask = mask.bool()
+                    logits = model(inputs, attn_mask=valid_mask)
                     valid_logits = logits[valid_mask]
                     valid_targets = targets[valid_mask]
                     loss = loss_fn(valid_logits, valid_targets)
@@ -133,8 +133,8 @@ def train_model(
                 scaler.step(optimizer)
                 scaler.update()
             else:
-                logits = model(inputs, attn_mask=mask)
                 valid_mask = mask.bool()
+                logits = model(inputs, attn_mask=valid_mask)
                 valid_logits = logits[valid_mask]
                 valid_targets = targets[valid_mask]
                 loss = loss_fn(valid_logits, valid_targets)
