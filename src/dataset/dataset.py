@@ -107,45 +107,79 @@ class VideoSegmentsDataset(Dataset):
             else:
                 raise FileNotFoundError(msg)
 
-        trk_df = pd.read_parquet(tracking_path)
-        total_frames = trk_df["video_frame"].nunique()
-        first_start = trk_df["video_frame"].min()
-        last_valid_start = total_frames - context_length + 1
-
-        starts = list(range(first_start, last_valid_start + 1, stride))
-        if not starts or starts[-1] != last_valid_start:
-            if starts and starts[-1] < last_valid_start:
-                starts.append(last_valid_start)
-            elif not starts:
-                starts = [last_valid_start]
-
-        return [(lab_id, vid, s, s + context_length - 1) for s in starts]
+        try:
+            # Read only necessary columns to save memory
+            trk_df = pd.read_parquet(
+                tracking_path,
+                columns=["video_frame"]
+            )
+            
+            # Use more memory-efficient operations
+            total_frames = trk_df["video_frame"].nunique()
+            first_start = trk_df["video_frame"].min()
+            last_valid_start = total_frames - context_length + 1
+            
+            # Clear dataframe from memory
+            del trk_df
+            
+            # Generate starts more efficiently
+            if last_valid_start < first_start:
+                return []
+                
+            starts = range(first_start, last_valid_start + 1, stride)
+            segments = []
+            
+            # Build segments with memory-efficient approach
+            for start in starts:
+                segments.append((lab_id, vid, start, start + context_length - 1))
+                
+            return segments
+                
+        except Exception as e:
+            if skip_missing:
+                warnings.warn(f"Error processing video {vid} in lab {lab_id}: {str(e)}")
+                return []
+            else:
+                raise
 
 
     def _build_segments_index(self):
-        """Parallelized segment indexing with progress tracking."""
+        """Memory-efficient segment indexing with progress tracking and chunked processing."""
         all_tasks = [
             (lab_id, vid, self.tracking_folder, self.annotation_folder, self.context_length, self.stride, self.skip_missing)
             for lab_id, vids in zip(self.lab_list, self.video_list)
             for vid in vids
         ]
 
-        max_workers = min(8, max(1, multiprocessing.cpu_count() // 2))
+        # Reduce number of parallel workers and process in smaller chunks
+        max_workers = min(4, max(1, multiprocessing.cpu_count() // 4))  # Reduced from 8 to 4
+        chunk_size = 10  # Process 10 videos at a time
         segments = []
 
-        with ProcessPoolExecutor(max_workers=max_workers) as executor:
-            futures = [executor.submit(VideoSegmentsDataset._compute_segments_for_video, task)
-                       for task in all_tasks]
+        # Process videos in chunks to manage memory
+        for i in range(0, len(all_tasks), chunk_size):
+            chunk_tasks = all_tasks[i:i + chunk_size]
+            
+            try:
+                with ProcessPoolExecutor(max_workers=max_workers) as executor:
+                    futures = [executor.submit(VideoSegmentsDataset._compute_segments_for_video, task)
+                            for task in chunk_tasks]
 
-            for f in tqdm(as_completed(futures), total=len(futures),
-                          desc="Building segment index", unit="video"):
-                try:
-                    result = f.result()
-                    segments.extend(result)
-                except Exception as e:
-                    if not self.skip_missing:
-                        raise
-                    warnings.warn(f"Skipping video due to error: {e}")
+                    for f in tqdm(as_completed(futures), 
+                                total=len(futures),
+                                desc=f"Building segment index (chunk {i//chunk_size + 1}/{(len(all_tasks)+chunk_size-1)//chunk_size})", 
+                                unit="video"):
+                        try:
+                            result = f.result()
+                            segments.extend(result)
+                        except Exception as e:
+                            if not self.skip_missing:
+                                raise
+                            warnings.warn(f"Skipping video due to error: {e}")
+            
+            except Exception as e:
+                warnings.warn(f"Error processing chunk: {e}. Continuing with next chunk...")
+                continue
 
         self.segments = segments
         print(f"✅ Built {len(self.segments)} total segments.")
