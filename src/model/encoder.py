@@ -123,44 +123,33 @@ class TransformerEncoderBlock(nn.Module):
 
 
 class MABeEncoder(nn.Module):
-    """
-    Encoder-only transformer for multi-label classification.
-      - Input: (B, n, input_dim)
-      - Output: (B, n, n_outputs)
-    """
-    def __init__(
-        self,
-        input_dim: int = 232,
-        embed_dim: int = 256,
-        num_heads: int = 8,
-        local_k: int = 5,
-        n_blocks: int = 6,
-        global_heads: int = 1,
-        dropout: float = 0.2,
-        n_outputs: int = 37
-    ):
+    def __init__(self,
+                 input_dim=232,
+                 embed_dim=256,
+                 num_heads=4,
+                 local_k=10,
+                 n_blocks=6,
+                 global_heads=1,
+                 dropout=0.2,
+                 n_outputs=37):
         super().__init__()
         self.embed_dim = embed_dim
-        self.input_proj = nn.Linear(input_dim, embed_dim)
 
-        # Pre-attention FFN
-        self.pre_ffn = nn.Sequential(
-            nn.Linear(embed_dim, embed_dim),
-            nn.GELU(),
-            nn.LayerNorm(embed_dim),
-        )
+        # Split input into 4 parts → FFN → concat → LayerNorm
+        part_dim = input_dim // 4
+        self.part_ffns = nn.ModuleList([
+            nn.Linear(part_dim, embed_dim // 4) for _ in range(4)
+        ])
+        self.merge_norm = nn.LayerNorm(embed_dim)
 
-        self.dropout = nn.Dropout(dropout)
-
-        # Encoder blocks
+        # Transformer blocks
         self.blocks = nn.ModuleList([
             TransformerEncoderBlock(embed_dim, num_heads, local_k, global_heads, dropout)
             for _ in range(n_blocks)
         ])
-
         self.final_ln = nn.LayerNorm(embed_dim)
 
-        # Projection for multi-label classification
+        # 🔹 Shared classifier applied to each time step
         self.classifier = nn.Sequential(
             nn.Linear(embed_dim, embed_dim),
             nn.GELU(),
@@ -168,19 +157,22 @@ class MABeEncoder(nn.Module):
             nn.Linear(embed_dim, n_outputs),
         )
 
-    def forward(self, x, attn_mask: Optional[torch.Tensor] = None):
-        """
-        x: (B, n, input_dim)
-        attn_mask: (B, n) True = valid token
-        Returns: (B, n, n_outputs)
-        """
-        x = self.input_proj(x)
-        x = self.pre_ffn(x)
-        x = self.dropout(x)
+    def forward(self, x, attn_mask=None):
+        B, n, D = x.shape
+        # Split input into 4 parts and process each separately
+        parts = torch.chunk(x, 4, dim=-1)  # 4 tensors of shape (B, n, D/4)
+        processed_parts = [ffn(p) for ffn, p in zip(self.part_ffns, parts)]
+        x = torch.cat(processed_parts, dim=-1)  # (B, n, embed_dim)
+        x = self.merge_norm(x)
 
+        # Pass through encoder blocks
         for block in self.blocks:
             x = block(x, attn_mask)
 
+        # Normalize final features
         x = self.final_ln(x)
-        logits = self.classifier(x)
+
+        # 🔹 Shared classifier across all time steps
+        logits = self.classifier(x)  # (B, n, n_outputs)
+
         return logits

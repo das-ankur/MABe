@@ -53,14 +53,31 @@ class FocalLoss(MultiLabelLoss):
         logits: raw model outputs (B, n_outputs)
         targets: binary labels (B, n_outputs)
         """
-        prob = torch.sigmoid(logits)
-        pt = prob * targets + (1 - prob) * (1 - targets)
-        alpha_factor = self.alpha * targets + (1 - self.alpha) * (1 - targets)
-        focal_weight = alpha_factor * (1 - pt) ** self.gamma
-
+        # Clip logits to prevent extreme values
+        logits = torch.clamp(logits, min=-100, max=100)
+        
+        # Calculate probabilities
+        p = torch.sigmoid(logits)
+        
+        # Calculate pt (probability of true class)
+        pt = p * targets + (1 - p) * (1 - targets)
+        pt = torch.clamp(pt, min=1e-7, max=1 - 1e-7)  # Prevent taking log of 0
+        
+        # Calculate focal weight
+        focal_weight = (1 - pt) ** self.gamma
+        
+        # Calculate alpha weight
+        alpha_weight = self.alpha * targets + (1 - self.alpha) * (1 - targets)
+        
+        # Combine weights
+        weight = alpha_weight * focal_weight
+        
+        # Calculate BCE loss (using logits for better numerical stability)
         bce_loss = F.binary_cross_entropy_with_logits(logits, targets, reduction='none')
-        loss = focal_weight * bce_loss
-
+        
+        # Calculate final loss
+        loss = weight * bce_loss
+        
         if self.reduction == 'mean':
             return loss.mean()
         elif self.reduction == 'sum':
