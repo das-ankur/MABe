@@ -5,6 +5,7 @@ from typing import Dict, Any, Optional, Callable, Tuple, List
 from torch.cuda.amp import autocast
 
 
+
 def evaluate_epoch(
     model: torch.nn.Module,
     dataloader: torch.utils.data.DataLoader,
@@ -121,24 +122,28 @@ def train_model(
             if amp:
                 with autocast():
                     logits = model(inputs, attn_mask=mask)
-                    loss_raw = loss_fn(logits, targets)
-                    masked_loss = (loss_raw * mask.unsqueeze(-1)).sum() / mask.sum()
-                scaler.scale(masked_loss).backward()
+                    valid_mask = mask.bool()
+                    valid_logits = logits[valid_mask]
+                    valid_targets = targets[valid_mask]
+                    loss = loss_fn(valid_logits, valid_targets)
+                scaler.scale(loss).backward()
                 if grad_clip:
                     scaler.unscale_(optimizer)
                     torch.nn.utils.clip_grad_norm_(model.parameters(), grad_clip)
                 scaler.step(optimizer)
                 scaler.update()
             else:
-                logits = model(inputs, attn_mask=mask.bool())
-                loss_raw = loss_fn(logits, targets)
-                masked_loss = (loss_raw * mask.unsqueeze(-1)).sum() / mask.sum()
-                masked_loss.backward()
+                logits = model(inputs, attn_mask=mask)
+                valid_mask = mask.bool()
+                valid_logits = logits[valid_mask]
+                valid_targets = targets[valid_mask]
+                loss = loss_fn(valid_logits, valid_targets)
+                loss.backward()
                 if grad_clip:
                     torch.nn.utils.clip_grad_norm_(model.parameters(), grad_clip)
                 optimizer.step()
 
-            train_losses.append(float(masked_loss.detach().cpu().item()))
+            train_losses.append(float(loss.detach().cpu().item()))
             logits_accum.append(logits.detach().cpu())
             targets_accum.append(targets.detach().cpu())
             masks_accum.append(mask.detach().cpu())

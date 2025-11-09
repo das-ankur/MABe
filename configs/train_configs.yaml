@@ -9,7 +9,7 @@ optimizer:
 loss_function:
   name: BCELoss
   loss_function_params:
-    reduction: 'none'
+    reduction: 'sum'
 model:
   embed_dim: 64
   num_heads: 4
