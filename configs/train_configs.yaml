@@ -1,4 +1,4 @@
-context_length: 5000
+context_length: 4500
 batch_size: 4
 overlap_frames: 100
 skip_missing: true
