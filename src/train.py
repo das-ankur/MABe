@@ -4,6 +4,9 @@ from tqdm import tqdm
 from typing import Dict, Any, Optional, Callable, Tuple, List
 from torch.cuda.amp import autocast
 
+# Set PyTorch CUDA memory allocation configuration to avoid fragmentation
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+
 
 
 def evaluate_epoch(
