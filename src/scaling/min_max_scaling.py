@@ -35,14 +35,25 @@ def min_max_scaling(values, min_val, max_val):
     Perform Min-Max normalization using provided global min/max values,
     ignoring entries with value -1 (treated as missing).
     """
-    arr = np.array(values, dtype=float)
+    arr = np.array(values, dtype=np.float32)  # Explicitly use float32
     mask = arr != -1
     if not np.any(mask):
         return arr
 
-    denom = max_val - min_val
-    if denom == 0:
-        arr[mask] = 0
-    else:
-        arr[mask] = (arr[mask] - min_val) / denom
+    # Add small epsilon to prevent division by zero
+    eps = 1e-7
+    denom = max_val - min_val + eps
+    
+    # Clip input values to prevent extreme outliers
+    arr[mask] = np.clip(arr[mask], min_val - eps, max_val + eps)
+    
+    # Perform scaling
+    arr[mask] = (arr[mask] - min_val) / denom
+    
+    # Clip output to [0, 1] range for safety
+    arr[mask] = np.clip(arr[mask], 0, 1)
+    
+    # Replace any potential NaN or Inf values with -1 (missing)
+    arr[~np.isfinite(arr)] = -1
+    
     return arr

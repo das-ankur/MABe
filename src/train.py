@@ -137,11 +137,39 @@ def train_model(
                 logits = model(inputs, attn_mask=valid_mask)
                 valid_logits = logits[valid_mask]
                 valid_targets = targets[valid_mask]
+                
+                # Check for NaN in inputs
+                if torch.isnan(valid_logits).any() or torch.isnan(valid_targets).any():
+                    print(f"WARNING: NaN detected in inputs/targets")
+                    continue
+                    
                 loss = loss_fn(valid_logits, valid_targets)
+                
+                # Check for NaN in loss
+                if torch.isnan(loss).any():
+                    print(f"WARNING: NaN detected in loss")
+                    continue
+                
+                # Gradient clipping and norm checking
                 loss.backward()
                 if grad_clip:
                     torch.nn.utils.clip_grad_norm_(model.parameters(), grad_clip)
+                
+                # Check for NaN in gradients
+                for name, param in model.named_parameters():
+                    if param.grad is not None and torch.isnan(param.grad).any():
+                        print(f"WARNING: NaN gradient detected in {name}")
+                        param.grad = None  # Zero out NaN gradients
+                
                 optimizer.step()
+                
+                # Check model parameters for NaN
+                with torch.no_grad():
+                    for name, param in model.named_parameters():
+                        if torch.isnan(param).any():
+                            print(f"WARNING: NaN weights detected in {name}")
+                            # Initialize with small random values
+                            param.data = torch.randn_like(param.data) * 0.01
 
             train_losses.append(float(loss.detach().cpu().item()))
             logits_accum.append(logits.detach().cpu())
