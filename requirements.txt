@@ -4,7 +4,4 @@ cachetools
 numpy
 pandas
 pyarrow
-torch --index-url https://download.pytorch.org/whl/cu126
-torchvision --index-url https://download.pytorch.org/whl/cu126
-torchview
 PyYAML
