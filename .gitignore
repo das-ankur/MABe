@@ -15,3 +15,6 @@ kaggle.json
 # Python cache folders and compiled files
 __pycache__/
 *.pyc
+
+# Ignore dumps folder
+notebooks/dumps/

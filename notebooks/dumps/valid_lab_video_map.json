@@ -1,887 +1,4275 @@
 {
     "AdaptableSnail": [
-        44566106,
-        143861384,
-        209576908,
-        278643799,
-        351967631,
-        355542626,
-        678426900,
-        705948978,
-        878123481,
-        1212811043,
-        1260392287,
-        1351098077,
-        1408652858,
-        1596473327,
-        1643942986,
-        1717182687,
-        2078515636
+        {
+            "video_id": 44566106,
+            "video_width_pix": 1228,
+            "video_height_pix": 1068
+        },
+        {
+            "video_id": 143861384,
+            "video_width_pix": 968,
+            "video_height_pix": 608
+        },
+        {
+            "video_id": 209576908,
+            "video_width_pix": 1266,
+            "video_height_pix": 1100
+        },
+        {
+            "video_id": 278643799,
+            "video_width_pix": 1224,
+            "video_height_pix": 1100
+        },
+        {
+            "video_id": 351967631,
+            "video_width_pix": 1204,
+            "video_height_pix": 1068
+        },
+        {
+            "video_id": 355542626,
+            "video_width_pix": 1230,
+            "video_height_pix": 1058
+        },
+        {
+            "video_id": 678426900,
+            "video_width_pix": 1230,
+            "video_height_pix": 1058
+        },
+        {
+            "video_id": 705948978,
+            "video_width_pix": 1228,
+            "video_height_pix": 1068
+        },
+        {
+            "video_id": 878123481,
+            "video_width_pix": 968,
+            "video_height_pix": 608
+        },
+        {
+            "video_id": 1212811043,
+            "video_width_pix": 968,
+            "video_height_pix": 608
+        },
+        {
+            "video_id": 1260392287,
+            "video_width_pix": 1186,
+            "video_height_pix": 1054
+        },
+        {
+            "video_id": 1351098077,
+            "video_width_pix": 1186,
+            "video_height_pix": 1054
+        },
+        {
+            "video_id": 1408652858,
+            "video_width_pix": 1266,
+            "video_height_pix": 1100
+        },
+        {
+            "video_id": 1596473327,
+            "video_width_pix": 968,
+            "video_height_pix": 608
+        },
+        {
+            "video_id": 1643942986,
+            "video_width_pix": 1186,
+            "video_height_pix": 1054
+        },
+        {
+            "video_id": 1717182687,
+            "video_width_pix": 1204,
+            "video_height_pix": 1068
+        },
+        {
+            "video_id": 2078515636,
+            "video_width_pix": 1224,
+            "video_height_pix": 1100
+        }
     ],
     "BoisterousParrot": [
-        402963089,
-        459610814,
-        613246188,
-        1059582964,
-        1184291605,
-        1201849558,
-        1459695188,
-        1985626297
+        {
+            "video_id": 402963089,
+            "video_width_pix": 300,
+            "video_height_pix": 300
+        },
+        {
+            "video_id": 459610814,
+            "video_width_pix": 300,
+            "video_height_pix": 300
+        },
+        {
+            "video_id": 613246188,
+            "video_width_pix": 300,
+            "video_height_pix": 300
+        },
+        {
+            "video_id": 1059582964,
+            "video_width_pix": 300,
+            "video_height_pix": 300
+        },
+        {
+            "video_id": 1184291605,
+            "video_width_pix": 300,
+            "video_height_pix": 300
+        },
+        {
+            "video_id": 1201849558,
+            "video_width_pix": 300,
+            "video_height_pix": 300
+        },
+        {
+            "video_id": 1459695188,
+            "video_width_pix": 300,
+            "video_height_pix": 300
+        },
+        {
+            "video_id": 1985626297,
+            "video_width_pix": 300,
+            "video_height_pix": 300
+        }
     ],
     "CRIM13": [
-        363958890,
-        415181540,
-        670907179,
-        793202924,
-        840324395,
-        1009459450,
-        1057221056,
-        1149348188,
-        1213233769,
-        1313797424,
-        1319309143,
-        1381910096,
-        1490000283,
-        1592386054,
-        1695807459,
-        1733903958,
-        1763467574,
-        1836572955,
-        1846302042,
-        1976539996,
-        2134094751
+        {
+            "video_id": 363958890,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 415181540,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 670907179,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 793202924,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 840324395,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1009459450,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1057221056,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1149348188,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1213233769,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1313797424,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1319309143,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1381910096,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1490000283,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1592386054,
+            "video_width_pix": 656,
+            "video_height_pix": 490
+        },
+        {
+            "video_id": 1695807459,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1733903958,
+            "video_width_pix": 656,
+            "video_height_pix": 490
+        },
+        {
+            "video_id": 1763467574,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1836572955,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1846302042,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1976539996,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 2134094751,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        }
     ],
     "CalMS21_supplemental": [
-        17308182,
-        29204526,
-        29829833,
-        31444359,
-        35021334,
-        40742782,
-        40750804,
-        42319786,
-        48387399,
-        52039908,
-        54306566,
-        56352203,
-        64642705,
-        72488788,
-        74402262,
-        93380531,
-        109675929,
-        110342188,
-        119456810,
-        121783441,
-        129371066,
-        139083951,
-        158696718,
-        162065037,
-        162657728,
-        163541934,
-        165039922,
-        176648153,
-        182143115,
-        199044781,
-        204814054,
-        206411405,
-        211473435,
-        229613936,
-        247581397,
-        257443481,
-        270605934,
-        283078835,
-        287957149,
-        292722123,
-        293032904,
-        293971737,
-        298840331,
-        304455631,
-        311944917,
-        318716558,
-        320652992,
-        321538526,
-        324704866,
-        352625654,
-        358516464,
-        379027684,
-        379641005,
-        397643142,
-        398952794,
-        416793024,
-        419242179,
-        423087515,
-        427319973,
-        427774009,
-        436212660,
-        446352765,
-        452068803,
-        455337890,
-        456109830,
-        461440057,
-        467701507,
-        495791948,
-        501836189,
-        502201747,
-        506737762,
-        512573715,
-        518945549,
-        518985954,
-        522883468,
-        531583938,
-        531669534,
-        537555916,
-        543628016,
-        544047008,
-        550605327,
-        552808855,
-        553713693,
-        560149373,
-        564614304,
-        566896495,
-        571702992,
-        577041568,
-        583997490,
-        591324785,
-        598974879,
-        605925180,
-        616524351,
-        629313314,
-        650064423,
-        659029417,
-        672951482,
-        680884492,
-        685535880,
-        695462600,
-        708536757,
-        716655035,
-        720733765,
-        729100934,
-        736444046,
-        737848535,
-        748397509,
-        751868515,
-        761253861,
-        763575760,
-        766946181,
-        767129341,
-        771126279,
-        777923084,
-        778173181,
-        783482595,
-        811059680,
-        812315940,
-        818194272,
-        826874848,
-        859466703,
-        861175984,
-        867664247,
-        868794783,
-        878542442,
-        880329423,
-        888737494,
-        889801833,
-        892931209,
-        895050858,
-        898612783,
-        906511432,
-        918178571,
-        947901691,
-        950513978,
-        950827076,
-        961477544,
-        961918556,
-        973541620,
-        979756439,
-        986093463,
-        996373370,
-        997548234,
-        1006083669,
-        1012566686,
-        1012566850,
-        1013428301,
-        1014350333,
-        1015291592,
-        1017236040,
-        1019240807,
-        1032773418,
-        1039672228,
-        1047608795,
-        1082445110,
-        1085810295,
-        1088021251,
-        1092798869,
-        1094348590,
-        1105042798,
-        1110611032,
-        1116444590,
-        1132476818,
-        1133807709,
-        1138789923,
-        1142036064,
-        1149399074,
-        1158341062,
-        1161382388,
-        1161513440,
-        1180251359,
-        1185620508,
-        1197353862,
-        1207553838,
-        1231968667,
-        1267508818,
-        1272568731,
-        1272974030,
-        1277377564,
-        1278319432,
-        1293027619,
-        1301288495,
-        1320201420,
-        1327458782,
-        1349102959,
-        1356723283,
-        1357765938,
-        1362255317,
-        1369858702,
-        1383011506,
-        1390249533,
-        1411405064,
-        1431927054,
-        1432635091,
-        1433266993,
-        1442492479,
-        1450277210,
-        1458368239,
-        1465225735,
-        1465845118,
-        1474034537,
-        1480402902,
-        1491960718,
-        1498476778,
-        1500887132,
-        1501429415,
-        1505228483,
-        1508568688,
-        1512101591,
-        1516524771,
-        1520746939,
-        1523817911,
-        1525217575,
-        1531311092,
-        1536671381,
-        1542354568,
-        1543288869,
-        1573791367,
-        1576527395,
-        1580520873,
-        1591554758,
-        1591747692,
-        1591757847,
-        1600524631,
-        1602849635,
-        1622496449,
-        1630924702,
-        1639493039,
-        1639810716,
-        1644423633,
-        1652683860,
-        1658817801,
-        1675950633,
-        1683673468,
-        1691279417,
-        1691760122,
-        1692251795,
-        1695342547,
-        1695348554,
-        1703310497,
-        1706585169,
-        1724547877,
-        1727431909,
-        1729232290,
-        1733995999,
-        1741457167,
-        1743317707,
-        1744212563,
-        1761366259,
-        1771120435,
-        1774554697,
-        1776748589,
-        1788436101,
-        1821740904,
-        1828414810,
-        1830370330,
-        1831993765,
-        1853523159,
-        1865009668,
-        1869967336,
-        1870526030,
-        1872766812,
-        1875246754,
-        1881725588,
-        1887057159,
-        1887340589,
-        1900472420,
-        1907533650,
-        1910565976,
-        1914240174,
-        1915789767,
-        1917012134,
-        1952344815,
-        1954031391,
-        1962858066,
-        1970018431,
-        1980223276,
-        1984570060,
-        1988640923,
-        1991863389,
-        2010437126,
-        2017225429,
-        2030380897,
-        2032102979,
-        2034534324,
-        2050459549,
-        2057608448,
-        2071350962,
-        2084840600,
-        2103676486,
-        2109429295,
-        2118799217,
-        2121861703,
-        2122787540,
-        2131370806,
-        2137179735,
-        2143302778
+        {
+            "video_id": 17308182,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 29204526,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 29829833,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 31444359,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 35021334,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 40742782,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 40750804,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 42319786,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 48387399,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 52039908,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 54306566,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 56352203,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 64642705,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 72488788,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 74402262,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 93380531,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 109675929,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 110342188,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 119456810,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 121783441,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 129371066,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 139083951,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 158696718,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 162065037,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 162657728,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 163541934,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 165039922,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 176648153,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 182143115,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 199044781,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 204814054,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 206411405,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 211473435,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 229613936,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 247581397,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 257443481,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 270605934,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 283078835,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 287957149,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 292722123,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 293032904,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 293971737,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 298840331,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 304455631,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 311944917,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 318716558,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 320652992,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 321538526,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 324704866,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 352625654,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 358516464,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 379027684,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 379641005,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 397643142,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 398952794,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 416793024,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 419242179,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 423087515,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 427319973,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 427774009,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 436212660,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 446352765,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 452068803,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 455337890,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 456109830,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 461440057,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 467701507,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 495791948,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 501836189,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 502201747,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 506737762,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 512573715,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 518945549,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 518985954,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 522883468,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 531583938,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 531669534,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 537555916,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 543628016,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 544047008,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 550605327,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 552808855,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 553713693,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 560149373,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 564614304,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 566896495,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 571702992,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 577041568,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 583997490,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 591324785,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 598974879,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 605925180,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 616524351,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 629313314,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 650064423,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 659029417,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 672951482,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 680884492,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 685535880,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 695462600,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 708536757,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 716655035,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 720733765,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 729100934,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 736444046,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 737848535,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 748397509,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 751868515,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 761253861,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 763575760,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 766946181,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 767129341,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 771126279,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 777923084,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 778173181,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 783482595,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 811059680,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 812315940,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 818194272,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 826874848,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 859466703,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 861175984,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 867664247,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 868794783,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 878542442,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 880329423,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 888737494,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 889801833,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 892931209,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 895050858,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 898612783,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 906511432,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 918178571,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 947901691,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 950513978,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 950827076,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 961477544,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 961918556,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 973541620,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 979756439,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 986093463,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 996373370,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 997548234,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1006083669,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1012566686,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1012566850,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1013428301,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1014350333,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1015291592,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1017236040,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1019240807,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1032773418,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1039672228,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1047608795,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1082445110,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1085810295,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1088021251,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1092798869,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1094348590,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1105042798,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1110611032,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1116444590,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1132476818,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1133807709,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1138789923,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1142036064,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1149399074,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1158341062,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1161382388,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1161513440,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1180251359,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1185620508,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1197353862,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1207553838,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1231968667,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1267508818,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1272568731,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1272974030,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1277377564,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1278319432,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1293027619,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1301288495,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1320201420,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1327458782,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1349102959,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1356723283,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1357765938,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1362255317,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1369858702,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1383011506,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1390249533,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1411405064,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1431927054,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1432635091,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1433266993,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1442492479,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1450277210,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1458368239,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1465225735,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1465845118,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1474034537,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1480402902,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1491960718,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1498476778,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1500887132,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1501429415,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1505228483,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1508568688,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1512101591,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1516524771,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1520746939,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1523817911,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1525217575,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1531311092,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1536671381,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1542354568,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1543288869,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1573791367,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1576527395,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1580520873,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1591554758,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1591747692,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1591757847,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1600524631,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1602849635,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1622496449,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1630924702,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1639493039,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1639810716,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1644423633,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1652683860,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1658817801,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1675950633,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1683673468,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1691279417,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1691760122,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1692251795,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1695342547,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1695348554,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1703310497,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1706585169,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1724547877,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1727431909,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1729232290,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1733995999,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1741457167,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1743317707,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1744212563,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1761366259,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1771120435,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1774554697,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1776748589,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1788436101,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1821740904,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1828414810,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1830370330,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1831993765,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1853523159,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1865009668,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1869967336,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1870526030,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1872766812,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1875246754,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1881725588,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1887057159,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1887340589,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1900472420,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1907533650,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1910565976,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1914240174,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1915789767,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1917012134,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1952344815,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1954031391,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1962858066,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1970018431,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1980223276,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1984570060,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1988640923,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1991863389,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2010437126,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2017225429,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2030380897,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2032102979,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2034534324,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2050459549,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2057608448,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2071350962,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2084840600,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2103676486,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2109429295,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2118799217,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2121861703,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2122787540,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2131370806,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2137179735,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2143302778,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        }
     ],
     "CalMS21_task1": [
-        13638642,
-        25423023,
-        25577048,
-        25669938,
-        33033070,
-        54612937,
-        87423842,
-        99618595,
-        169344990,
-        185446354,
-        190981840,
-        208838060,
-        231670784,
-        318982414,
-        400134184,
-        419458058,
-        427469519,
-        450233985,
-        450676531,
-        464367887,
-        467856973,
-        470631683,
-        537514760,
-        539221220,
-        549419715,
-        628121881,
-        654571905,
-        662173177,
-        682003698,
-        687327340,
-        733722340,
-        750259043,
-        764294971,
-        788202056,
-        792632641,
-        809307360,
-        821672987,
-        825457879,
-        856403727,
-        859139568,
-        865512963,
-        867864385,
-        869452571,
-        877503292,
-        898785933,
-        955650256,
-        962144409,
-        971638641,
-        987747695,
-        1011533560,
-        1036913557,
-        1062887364,
-        1087101060,
-        1089428234,
-        1094966159,
-        1104241687,
-        1184726818,
-        1185502231,
-        1236987558,
-        1254792963,
-        1283267722,
-        1296577409,
-        1311447023,
-        1343953527,
-        1377260232,
-        1380404564,
-        1391057636,
-        1396235717,
-        1401472494,
-        1476380868,
-        1495692909,
-        1520739403,
-        1522870122,
-        1529875185,
-        1561765718,
-        1578732722,
-        1640847308,
-        1682584277,
-        1694258334,
-        1715161851,
-        1733083885,
-        1767632325,
-        1784646165,
-        1817903677,
-        1842114740,
-        1852189475,
-        1860623663,
-        1865519837,
-        1885047067,
-        1937966765,
-        1987318234,
-        1993867941,
-        1999186993,
-        2006954681,
-        2007101618,
-        2021710297,
-        2032350850,
-        2097395874,
-        2123026052,
-        2126266703,
-        2133981046
+        {
+            "video_id": 13638642,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 25423023,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 25577048,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 25669938,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 33033070,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 54612937,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 87423842,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 99618595,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 169344990,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 185446354,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 190981840,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 208838060,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 231670784,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 318982414,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 400134184,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 419458058,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 427469519,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 450233985,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 450676531,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 464367887,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 467856973,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 470631683,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 537514760,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 539221220,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 549419715,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 628121881,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 654571905,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 662173177,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 682003698,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 687327340,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 733722340,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 750259043,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 764294971,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 788202056,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 792632641,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 809307360,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 821672987,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 825457879,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 856403727,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 859139568,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 865512963,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 867864385,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 869452571,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 877503292,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 898785933,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 955650256,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 962144409,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 971638641,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 987747695,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1011533560,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1036913557,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1062887364,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1087101060,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1089428234,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1094966159,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1104241687,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1184726818,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1185502231,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1236987558,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1254792963,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1283267722,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1296577409,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1311447023,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1343953527,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1377260232,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1380404564,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1391057636,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1396235717,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1401472494,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1476380868,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1495692909,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1520739403,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1522870122,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1529875185,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1561765718,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1578732722,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1640847308,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1682584277,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1694258334,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1715161851,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1733083885,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1767632325,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1784646165,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1817903677,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1842114740,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1852189475,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1860623663,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1865519837,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1885047067,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1937966765,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1987318234,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1993867941,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1999186993,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2006954681,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2007101618,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2021710297,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2032350850,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2097395874,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2123026052,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2126266703,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2133981046,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        }
     ],
     "CalMS21_task2": [
-        26836610,
-        34560832,
-        67749291,
-        117097929,
-        129168695,
-        137835184,
-        175235394,
-        176005687,
-        199610164,
-        206431495,
-        229268900,
-        263221825,
-        286946533,
-        290877417,
-        294892687,
-        297098028,
-        297176528,
-        305930325,
-        324868794,
-        396826388,
-        455201807,
-        524641856,
-        539518379,
-        609602822,
-        613882002,
-        618202345,
-        622818514,
-        627571315,
-        657847695,
-        712270439,
-        730848288,
-        735992493,
-        906875003,
-        907132469,
-        921231021,
-        943404911,
-        989586153,
-        1025257155,
-        1071207417,
-        1095059853,
-        1121857128,
-        1155324226,
-        1187380328,
-        1192622510,
-        1194961658,
-        1202353959,
-        1209045098,
-        1283628392,
-        1301095525,
-        1316696698,
-        1408282896,
-        1455057679,
-        1456488399,
-        1475799007,
-        1487348488,
-        1603961707,
-        1635298045,
-        1646053367,
-        1647072290,
-        1680784615,
-        1756586174,
-        1766041275,
-        1787046396,
-        1901912694,
-        1905980365,
-        1908605640,
-        1922635260,
-        1949495306,
-        1953275364,
-        1969815584,
-        2002724229,
-        2003281752,
-        2059639528,
-        2064198212,
-        2085007371,
-        2126514887
+        {
+            "video_id": 26836610,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 34560832,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 67749291,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 117097929,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 129168695,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 137835184,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 175235394,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 176005687,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 199610164,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 206431495,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 229268900,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 263221825,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 286946533,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 290877417,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 294892687,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 297098028,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 297176528,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 305930325,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 324868794,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 396826388,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 455201807,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 524641856,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 539518379,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 609602822,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 613882002,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 618202345,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 622818514,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 627571315,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 657847695,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 712270439,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 730848288,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 735992493,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 906875003,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 907132469,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 921231021,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 943404911,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 989586153,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1025257155,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1071207417,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1095059853,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1121857128,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1155324226,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1187380328,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1192622510,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1194961658,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1202353959,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1209045098,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1283628392,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1301095525,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1316696698,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1408282896,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1455057679,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1456488399,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1475799007,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1487348488,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1603961707,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1635298045,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1646053367,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1647072290,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1680784615,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1756586174,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1766041275,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1787046396,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1901912694,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1905980365,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1908605640,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1922635260,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1949495306,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1953275364,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 1969815584,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2002724229,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2003281752,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2059639528,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2064198212,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2085007371,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        },
+        {
+            "video_id": 2126514887,
+            "video_width_pix": 1024,
+            "video_height_pix": 570
+        }
     ],
     "CautiousGiraffe": [
-        21954203,
-        265592701,
-        531143932,
-        673614042,
-        684541933,
-        956938805,
-        1341883680,
-        1539773935,
-        1657896715,
-        1729143180
+        {
+            "video_id": 21954203,
+            "video_width_pix": 600,
+            "video_height_pix": 600
+        },
+        {
+            "video_id": 265592701,
+            "video_width_pix": 600,
+            "video_height_pix": 600
+        },
+        {
+            "video_id": 531143932,
+            "video_width_pix": 600,
+            "video_height_pix": 600
+        },
+        {
+            "video_id": 673614042,
+            "video_width_pix": 600,
+            "video_height_pix": 600
+        },
+        {
+            "video_id": 684541933,
+            "video_width_pix": 600,
+            "video_height_pix": 600
+        },
+        {
+            "video_id": 956938805,
+            "video_width_pix": 600,
+            "video_height_pix": 600
+        },
+        {
+            "video_id": 1341883680,
+            "video_width_pix": 600,
+            "video_height_pix": 600
+        },
+        {
+            "video_id": 1539773935,
+            "video_width_pix": 600,
+            "video_height_pix": 600
+        },
+        {
+            "video_id": 1657896715,
+            "video_width_pix": 600,
+            "video_height_pix": 600
+        },
+        {
+            "video_id": 1729143180,
+            "video_width_pix": 600,
+            "video_height_pix": 600
+        }
     ],
     "DeliriousFly": [
-        246051591,
-        342269939,
-        1378394926,
-        1549344783,
-        1649549863,
-        1894091332
+        {
+            "video_id": 246051591,
+            "video_width_pix": 864,
+            "video_height_pix": 412
+        },
+        {
+            "video_id": 342269939,
+            "video_width_pix": 864,
+            "video_height_pix": 412
+        },
+        {
+            "video_id": 1378394926,
+            "video_width_pix": 864,
+            "video_height_pix": 412
+        },
+        {
+            "video_id": 1549344783,
+            "video_width_pix": 864,
+            "video_height_pix": 412
+        },
+        {
+            "video_id": 1649549863,
+            "video_width_pix": 864,
+            "video_height_pix": 412
+        },
+        {
+            "video_id": 1894091332,
+            "video_width_pix": 864,
+            "video_height_pix": 412
+        }
     ],
     "ElegantMink": [
-        277941336,
-        302673140,
-        464176860,
-        535058450,
-        551378303,
-        653760641,
-        685480647,
-        715350314,
-        833000693,
-        899685019,
-        903467416,
-        1045757672,
-        1176870705,
-        1430254576,
-        1504809717,
-        1512066687,
-        1567994610,
-        1715945836,
-        1989117401
+        {
+            "video_id": 277941336,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 302673140,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 464176860,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 535058450,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 551378303,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 653760641,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 685480647,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 715350314,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 833000693,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 899685019,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 903467416,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1045757672,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1176870705,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1430254576,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1504809717,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1512066687,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1567994610,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1715945836,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1989117401,
+            "video_width_pix": 720,
+            "video_height_pix": 480
+        }
     ],
     "GroovyShrew": [
-        1550138,
-        5119542,
-        502020762,
-        593750722,
-        768075914,
-        870599401,
-        991578442,
-        1057262087,
-        1118505887,
-        1194163628,
-        1205169652,
-        1239537257,
-        1582689575,
-        1864237378,
-        2090182106,
-        2101706406,
-        2114187055
+        {
+            "video_id": 1550138,
+            "video_width_pix": 527,
+            "video_height_pix": 314
+        },
+        {
+            "video_id": 5119542,
+            "video_width_pix": 515,
+            "video_height_pix": 295
+        },
+        {
+            "video_id": 502020762,
+            "video_width_pix": 571,
+            "video_height_pix": 342
+        },
+        {
+            "video_id": 593750722,
+            "video_width_pix": 533,
+            "video_height_pix": 309
+        },
+        {
+            "video_id": 768075914,
+            "video_width_pix": 534,
+            "video_height_pix": 293
+        },
+        {
+            "video_id": 870599401,
+            "video_width_pix": 528,
+            "video_height_pix": 301
+        },
+        {
+            "video_id": 991578442,
+            "video_width_pix": 571,
+            "video_height_pix": 342
+        },
+        {
+            "video_id": 1057262087,
+            "video_width_pix": 515,
+            "video_height_pix": 310
+        },
+        {
+            "video_id": 1118505887,
+            "video_width_pix": 449,
+            "video_height_pix": 254
+        },
+        {
+            "video_id": 1194163628,
+            "video_width_pix": 540,
+            "video_height_pix": 300
+        },
+        {
+            "video_id": 1205169652,
+            "video_width_pix": 515,
+            "video_height_pix": 295
+        },
+        {
+            "video_id": 1239537257,
+            "video_width_pix": 533,
+            "video_height_pix": 300
+        },
+        {
+            "video_id": 1582689575,
+            "video_width_pix": 536,
+            "video_height_pix": 311
+        },
+        {
+            "video_id": 1864237378,
+            "video_width_pix": 536,
+            "video_height_pix": 314
+        },
+        {
+            "video_id": 2090182106,
+            "video_width_pix": 526,
+            "video_height_pix": 308
+        },
+        {
+            "video_id": 2101706406,
+            "video_width_pix": 545,
+            "video_height_pix": 314
+        },
+        {
+            "video_id": 2114187055,
+            "video_width_pix": 537,
+            "video_height_pix": 313
+        }
     ],
     "InvincibleJellyfish": [
-        2161338,
-        29275550,
-        53935139,
-        129177073,
-        193645959,
-        262394522,
-        395110588,
-        415753207,
-        620922286,
-        639121386,
-        648966646,
-        764405255,
-        811519784,
-        1106234543,
-        1108562754,
-        1171931756,
-        1205744881,
-        1239915365,
-        1266015456,
-        1356022583,
-        1386249360,
-        1574549259,
-        1613426084,
-        1633648033,
-        1634074988,
-        1641568569,
-        1700300193,
-        1737795006,
-        1739671883,
-        1792494407,
-        2071866786,
-        2116375223,
-        2120950784
+        {
+            "video_id": 2161338,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        },
+        {
+            "video_id": 29275550,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        },
+        {
+            "video_id": 53935139,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        },
+        {
+            "video_id": 129177073,
+            "video_width_pix": 1280,
+            "video_height_pix": 960
+        },
+        {
+            "video_id": 193645959,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        },
+        {
+            "video_id": 262394522,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        },
+        {
+            "video_id": 395110588,
+            "video_width_pix": 1280,
+            "video_height_pix": 960
+        },
+        {
+            "video_id": 415753207,
+            "video_width_pix": 1280,
+            "video_height_pix": 960
+        },
+        {
+            "video_id": 620922286,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        },
+        {
+            "video_id": 639121386,
+            "video_width_pix": 1280,
+            "video_height_pix": 960
+        },
+        {
+            "video_id": 648966646,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        },
+        {
+            "video_id": 764405255,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        },
+        {
+            "video_id": 811519784,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        },
+        {
+            "video_id": 1106234543,
+            "video_width_pix": 1280,
+            "video_height_pix": 960
+        },
+        {
+            "video_id": 1108562754,
+            "video_width_pix": 1280,
+            "video_height_pix": 960
+        },
+        {
+            "video_id": 1171931756,
+            "video_width_pix": 1280,
+            "video_height_pix": 960
+        },
+        {
+            "video_id": 1205744881,
+            "video_width_pix": 1280,
+            "video_height_pix": 960
+        },
+        {
+            "video_id": 1239915365,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        },
+        {
+            "video_id": 1266015456,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        },
+        {
+            "video_id": 1356022583,
+            "video_width_pix": 1280,
+            "video_height_pix": 960
+        },
+        {
+            "video_id": 1386249360,
+            "video_width_pix": 1280,
+            "video_height_pix": 960
+        },
+        {
+            "video_id": 1574549259,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        },
+        {
+            "video_id": 1613426084,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        },
+        {
+            "video_id": 1633648033,
+            "video_width_pix": 1280,
+            "video_height_pix": 960
+        },
+        {
+            "video_id": 1634074988,
+            "video_width_pix": 1280,
+            "video_height_pix": 960
+        },
+        {
+            "video_id": 1641568569,
+            "video_width_pix": 1280,
+            "video_height_pix": 960
+        },
+        {
+            "video_id": 1700300193,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        },
+        {
+            "video_id": 1737795006,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        },
+        {
+            "video_id": 1739671883,
+            "video_width_pix": 1280,
+            "video_height_pix": 960
+        },
+        {
+            "video_id": 1792494407,
+            "video_width_pix": 1280,
+            "video_height_pix": 960
+        },
+        {
+            "video_id": 2071866786,
+            "video_width_pix": 1280,
+            "video_height_pix": 960
+        },
+        {
+            "video_id": 2116375223,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        },
+        {
+            "video_id": 2120950784,
+            "video_width_pix": 1024,
+            "video_height_pix": 768
+        }
     ],
     "JovialSwallow": [
-        24807360,
-        67652770,
-        75620690,
-        172389446,
-        197599685,
-        231479039,
-        326963499,
-        383642292,
-        405720065,
-        420937257,
-        498244519,
-        530737197,
-        561469522,
-        600302154,
-        645933471,
-        670490764,
-        689840236,
-        762151225,
-        821473511,
-        822941934,
-        848229796,
-        856443471,
-        867736486,
-        922188635,
-        949931556,
-        962830984,
-        970336324,
-        990352516,
-        992602149,
-        1096442159,
-        1098020586,
-        1164701770,
-        1212894105,
-        1231275297,
-        1337647037,
-        1350470271,
-        1395387249,
-        1436885521,
-        1446413535,
-        1494705948,
-        1558497723,
-        1562272988,
-        1738679825,
-        1774713914,
-        1808343518,
-        1842945543,
-        1938183396,
-        2046347857,
-        2052386904,
-        2062182880,
-        2104860485,
-        2121118582
+        {
+            "video_id": 24807360,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 67652770,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 75620690,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 172389446,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 197599685,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 231479039,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 326963499,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 383642292,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 405720065,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 420937257,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 498244519,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 530737197,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 561469522,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 600302154,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 645933471,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 670490764,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 689840236,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 762151225,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 821473511,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 822941934,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 848229796,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 856443471,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 867736486,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 922188635,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 949931556,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 962830984,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 970336324,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 990352516,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 992602149,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1096442159,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1098020586,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1164701770,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1212894105,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1231275297,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1337647037,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1350470271,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1395387249,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1436885521,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1446413535,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1494705948,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1558497723,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1562272988,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1738679825,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1774713914,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1808343518,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1842945543,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1938183396,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 2046347857,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 2052386904,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 2062182880,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 2104860485,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 2121118582,
+            "video_width_pix": 400,
+            "video_height_pix": 480
+        }
     ],
     "LyricalHare": [
-        121552177,
-        145951819,
-        200061326,
-        291532073,
-        427791079,
-        472812034,
-        577720259,
-        789316660,
-        835416988,
-        906127418,
-        1023347338,
-        1117939052,
-        1254387004,
-        1300539709,
-        1321123524,
-        1326742968,
-        1383872208,
-        1516355035,
-        1633006253,
-        1675029002,
-        1814043806,
-        1859239379,
-        2054411054,
-        2076865965
+        {
+            "video_id": 121552177,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 145951819,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 200061326,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 291532073,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 427791079,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 472812034,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 577720259,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 789316660,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 835416988,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 906127418,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 1023347338,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 1117939052,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 1254387004,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 1300539709,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 1321123524,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 1326742968,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 1383872208,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 1516355035,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 1633006253,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 1675029002,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 1814043806,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 1859239379,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 2054411054,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        },
+        {
+            "video_id": 2076865965,
+            "video_width_pix": 560,
+            "video_height_pix": 680
+        }
     ],
     "NiftyGoldfinch": [
-        101686631,
-        425399867,
-        960582355,
-        984382096,
-        1223664597,
-        1233426234,
-        1269061587,
-        1539947238,
-        1654932902,
-        1705186224,
-        2103620137
+        {
+            "video_id": 101686631,
+            "video_width_pix": 600,
+            "video_height_pix": 350
+        },
+        {
+            "video_id": 425399867,
+            "video_width_pix": 600,
+            "video_height_pix": 350
+        },
+        {
+            "video_id": 960582355,
+            "video_width_pix": 600,
+            "video_height_pix": 350
+        },
+        {
+            "video_id": 984382096,
+            "video_width_pix": 600,
+            "video_height_pix": 350
+        },
+        {
+            "video_id": 1223664597,
+            "video_width_pix": 600,
+            "video_height_pix": 350
+        },
+        {
+            "video_id": 1233426234,
+            "video_width_pix": 600,
+            "video_height_pix": 350
+        },
+        {
+            "video_id": 1269061587,
+            "video_width_pix": 600,
+            "video_height_pix": 350
+        },
+        {
+            "video_id": 1539947238,
+            "video_width_pix": 600,
+            "video_height_pix": 350
+        },
+        {
+            "video_id": 1654932902,
+            "video_width_pix": 600,
+            "video_height_pix": 350
+        },
+        {
+            "video_id": 1705186224,
+            "video_width_pix": 600,
+            "video_height_pix": 350
+        },
+        {
+            "video_id": 2103620137,
+            "video_width_pix": 600,
+            "video_height_pix": 350
+        }
     ],
     "PleasantMeerkat": [
-        599439,
-        62373697,
-        74645358,
-        201760488,
-        263433603,
-        331245147,
-        365886350,
-        372539857,
-        408761044,
-        498458760,
-        754974789,
-        843765839,
-        886803007,
-        908567232,
-        932755484,
-        974867366,
-        1089480847,
-        1133952127,
-        1177059156,
-        1212669906,
-        1266446081,
-        1350372183,
-        1396183780,
-        1441309015,
-        1445631188,
-        1450482262,
-        1475649798,
-        1603176175,
-        1749697095,
-        1769027005,
-        1780823248,
-        1933653459,
-        1986134767,
-        2002810725,
-        2050697745
+        {
+            "video_id": 599439,
+            "video_width_pix": 2048,
+            "video_height_pix": 2020
+        },
+        {
+            "video_id": 62373697,
+            "video_width_pix": 2048,
+            "video_height_pix": 2010
+        },
+        {
+            "video_id": 74645358,
+            "video_width_pix": 2048,
+            "video_height_pix": 2010
+        },
+        {
+            "video_id": 201760488,
+            "video_width_pix": 2020,
+            "video_height_pix": 2020
+        },
+        {
+            "video_id": 263433603,
+            "video_width_pix": 2010,
+            "video_height_pix": 2026
+        },
+        {
+            "video_id": 331245147,
+            "video_width_pix": 2020,
+            "video_height_pix": 2020
+        },
+        {
+            "video_id": 365886350,
+            "video_width_pix": 2010,
+            "video_height_pix": 2040
+        },
+        {
+            "video_id": 372539857,
+            "video_width_pix": 2010,
+            "video_height_pix": 2040
+        },
+        {
+            "video_id": 408761044,
+            "video_width_pix": 2048,
+            "video_height_pix": 2014
+        },
+        {
+            "video_id": 498458760,
+            "video_width_pix": 2010,
+            "video_height_pix": 2024
+        },
+        {
+            "video_id": 754974789,
+            "video_width_pix": 2020,
+            "video_height_pix": 1994
+        },
+        {
+            "video_id": 843765839,
+            "video_width_pix": 2020,
+            "video_height_pix": 1994
+        },
+        {
+            "video_id": 886803007,
+            "video_width_pix": 2010,
+            "video_height_pix": 2026
+        },
+        {
+            "video_id": 908567232,
+            "video_width_pix": 2010,
+            "video_height_pix": 2024
+        },
+        {
+            "video_id": 932755484,
+            "video_width_pix": 2010,
+            "video_height_pix": 2040
+        },
+        {
+            "video_id": 974867366,
+            "video_width_pix": 2048,
+            "video_height_pix": 2036
+        },
+        {
+            "video_id": 1089480847,
+            "video_width_pix": 2000,
+            "video_height_pix": 2022
+        },
+        {
+            "video_id": 1133952127,
+            "video_width_pix": 2010,
+            "video_height_pix": 2024
+        },
+        {
+            "video_id": 1177059156,
+            "video_width_pix": 2010,
+            "video_height_pix": 2040
+        },
+        {
+            "video_id": 1212669906,
+            "video_width_pix": 2000,
+            "video_height_pix": 2020
+        },
+        {
+            "video_id": 1266446081,
+            "video_width_pix": 2020,
+            "video_height_pix": 1994
+        },
+        {
+            "video_id": 1350372183,
+            "video_width_pix": 2020,
+            "video_height_pix": 1994
+        },
+        {
+            "video_id": 1396183780,
+            "video_width_pix": 2020,
+            "video_height_pix": 1994
+        },
+        {
+            "video_id": 1441309015,
+            "video_width_pix": 2020,
+            "video_height_pix": 1994
+        },
+        {
+            "video_id": 1445631188,
+            "video_width_pix": 2020,
+            "video_height_pix": 1994
+        },
+        {
+            "video_id": 1450482262,
+            "video_width_pix": 2020,
+            "video_height_pix": 2050
+        },
+        {
+            "video_id": 1475649798,
+            "video_width_pix": 2048,
+            "video_height_pix": 2020
+        },
+        {
+            "video_id": 1603176175,
+            "video_width_pix": 2020,
+            "video_height_pix": 1994
+        },
+        {
+            "video_id": 1749697095,
+            "video_width_pix": 2000,
+            "video_height_pix": 2026
+        },
+        {
+            "video_id": 1769027005,
+            "video_width_pix": 2020,
+            "video_height_pix": 2034
+        },
+        {
+            "video_id": 1780823248,
+            "video_width_pix": 2020,
+            "video_height_pix": 2050
+        },
+        {
+            "video_id": 1933653459,
+            "video_width_pix": 2020,
+            "video_height_pix": 2020
+        },
+        {
+            "video_id": 1986134767,
+            "video_width_pix": 2020,
+            "video_height_pix": 2034
+        },
+        {
+            "video_id": 2002810725,
+            "video_width_pix": 2000,
+            "video_height_pix": 2022
+        },
+        {
+            "video_id": 2050697745,
+            "video_width_pix": 2048,
+            "video_height_pix": 2010
+        }
     ],
     "ReflectiveManatee": [
-        315178669,
-        390030205,
-        498093416,
-        531131153,
-        631163660,
-        748834872,
-        828175681,
-        912929235,
-        920161729,
-        1270744933,
-        1458170545,
-        1663417188,
-        1728439177,
-        1859225348,
-        1977236166,
-        1986679638,
-        2037289010,
-        2040167035,
-        2068280177,
-        2115562740
+        {
+            "video_id": 315178669,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 390030205,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 498093416,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 531131153,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 631163660,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 748834872,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 828175681,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 912929235,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 920161729,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 1270744933,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 1458170545,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 1663417188,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 1728439177,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 1859225348,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 1977236166,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 1986679638,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 2037289010,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 2040167035,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 2068280177,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        },
+        {
+            "video_id": 2115562740,
+            "video_width_pix": 656,
+            "video_height_pix": 492
+        }
     ],
     "SparklingTapir": [
-        58714936,
-        159008741,
-        160640380,
-        276682473,
-        385126201,
-        397029082,
-        413085535,
-        426173640,
-        432830442,
-        449008671,
-        480344368,
-        504327699,
-        530169751,
-        606764826,
-        670910750,
-        696042182,
-        738250759,
-        762080930,
-        961245099,
-        975035187,
-        981363505,
-        1063876199,
-        1086931654,
-        1105416294,
-        1127527475,
-        1237008561,
-        1264225733,
-        1289903608,
-        1320793692,
-        1323634202,
-        1324626464,
-        1370864222,
-        1467427271,
-        1481654558,
-        1497516919,
-        1500351368,
-        1517321425,
-        1548588128,
-        1565453395,
-        1580642046,
-        1625103025,
-        1668409009,
-        1696052337,
-        1700880638,
-        1702238292,
-        1707173618,
-        1727709528,
-        1742534206,
-        1863117852,
-        1882614402,
-        1942017841,
-        1981250306,
-        2030735934,
-        2036366833
+        {
+            "video_id": 58714936,
+            "video_width_pix": 1200,
+            "video_height_pix": 2048
+        },
+        {
+            "video_id": 159008741,
+            "video_width_pix": 828,
+            "video_height_pix": 194
+        },
+        {
+            "video_id": 160640380,
+            "video_width_pix": 428,
+            "video_height_pix": 1226
+        },
+        {
+            "video_id": 276682473,
+            "video_width_pix": 736,
+            "video_height_pix": 1198
+        },
+        {
+            "video_id": 385126201,
+            "video_width_pix": 1000,
+            "video_height_pix": 1544
+        },
+        {
+            "video_id": 397029082,
+            "video_width_pix": 828,
+            "video_height_pix": 194
+        },
+        {
+            "video_id": 413085535,
+            "video_width_pix": 1200,
+            "video_height_pix": 2048
+        },
+        {
+            "video_id": 426173640,
+            "video_width_pix": 676,
+            "video_height_pix": 1140
+        },
+        {
+            "video_id": 432830442,
+            "video_width_pix": 786,
+            "video_height_pix": 1198
+        },
+        {
+            "video_id": 449008671,
+            "video_width_pix": 1200,
+            "video_height_pix": 2048
+        },
+        {
+            "video_id": 480344368,
+            "video_width_pix": 1080,
+            "video_height_pix": 1920
+        },
+        {
+            "video_id": 504327699,
+            "video_width_pix": 1080,
+            "video_height_pix": 1920
+        },
+        {
+            "video_id": 530169751,
+            "video_width_pix": 752,
+            "video_height_pix": 1200
+        },
+        {
+            "video_id": 606764826,
+            "video_width_pix": 1000,
+            "video_height_pix": 1544
+        },
+        {
+            "video_id": 670910750,
+            "video_width_pix": 416,
+            "video_height_pix": 1246
+        },
+        {
+            "video_id": 696042182,
+            "video_width_pix": 690,
+            "video_height_pix": 1180
+        },
+        {
+            "video_id": 738250759,
+            "video_width_pix": 404,
+            "video_height_pix": 1216
+        },
+        {
+            "video_id": 762080930,
+            "video_width_pix": 1000,
+            "video_height_pix": 1544
+        },
+        {
+            "video_id": 961245099,
+            "video_width_pix": 406,
+            "video_height_pix": 1214
+        },
+        {
+            "video_id": 975035187,
+            "video_width_pix": 1080,
+            "video_height_pix": 1920
+        },
+        {
+            "video_id": 981363505,
+            "video_width_pix": 1200,
+            "video_height_pix": 2048
+        },
+        {
+            "video_id": 1063876199,
+            "video_width_pix": 1200,
+            "video_height_pix": 2056
+        },
+        {
+            "video_id": 1086931654,
+            "video_width_pix": 408,
+            "video_height_pix": 1240
+        },
+        {
+            "video_id": 1105416294,
+            "video_width_pix": 1080,
+            "video_height_pix": 1920
+        },
+        {
+            "video_id": 1127527475,
+            "video_width_pix": 836,
+            "video_height_pix": 228
+        },
+        {
+            "video_id": 1237008561,
+            "video_width_pix": 1200,
+            "video_height_pix": 2056
+        },
+        {
+            "video_id": 1264225733,
+            "video_width_pix": 834,
+            "video_height_pix": 204
+        },
+        {
+            "video_id": 1289903608,
+            "video_width_pix": 814,
+            "video_height_pix": 206
+        },
+        {
+            "video_id": 1320793692,
+            "video_width_pix": 428,
+            "video_height_pix": 1238
+        },
+        {
+            "video_id": 1323634202,
+            "video_width_pix": 1080,
+            "video_height_pix": 1920
+        },
+        {
+            "video_id": 1324626464,
+            "video_width_pix": 1000,
+            "video_height_pix": 1544
+        },
+        {
+            "video_id": 1370864222,
+            "video_width_pix": 1200,
+            "video_height_pix": 2056
+        },
+        {
+            "video_id": 1467427271,
+            "video_width_pix": 400,
+            "video_height_pix": 1238
+        },
+        {
+            "video_id": 1481654558,
+            "video_width_pix": 414,
+            "video_height_pix": 1222
+        },
+        {
+            "video_id": 1497516919,
+            "video_width_pix": 728,
+            "video_height_pix": 1198
+        },
+        {
+            "video_id": 1500351368,
+            "video_width_pix": 1200,
+            "video_height_pix": 2056
+        },
+        {
+            "video_id": 1517321425,
+            "video_width_pix": 744,
+            "video_height_pix": 1200
+        },
+        {
+            "video_id": 1548588128,
+            "video_width_pix": 1000,
+            "video_height_pix": 1544
+        },
+        {
+            "video_id": 1565453395,
+            "video_width_pix": 430,
+            "video_height_pix": 1220
+        },
+        {
+            "video_id": 1580642046,
+            "video_width_pix": 718,
+            "video_height_pix": 1198
+        },
+        {
+            "video_id": 1625103025,
+            "video_width_pix": 808,
+            "video_height_pix": 1198
+        },
+        {
+            "video_id": 1668409009,
+            "video_width_pix": 1200,
+            "video_height_pix": 2056
+        },
+        {
+            "video_id": 1696052337,
+            "video_width_pix": 1080,
+            "video_height_pix": 1920
+        },
+        {
+            "video_id": 1700880638,
+            "video_width_pix": 1200,
+            "video_height_pix": 2048
+        },
+        {
+            "video_id": 1702238292,
+            "video_width_pix": 1080,
+            "video_height_pix": 1920
+        },
+        {
+            "video_id": 1707173618,
+            "video_width_pix": 1080,
+            "video_height_pix": 1920
+        },
+        {
+            "video_id": 1727709528,
+            "video_width_pix": 1080,
+            "video_height_pix": 1920
+        },
+        {
+            "video_id": 1742534206,
+            "video_width_pix": 1200,
+            "video_height_pix": 2048
+        },
+        {
+            "video_id": 1863117852,
+            "video_width_pix": 1200,
+            "video_height_pix": 2056
+        },
+        {
+            "video_id": 1882614402,
+            "video_width_pix": 726,
+            "video_height_pix": 1198
+        },
+        {
+            "video_id": 1942017841,
+            "video_width_pix": 1000,
+            "video_height_pix": 1544
+        },
+        {
+            "video_id": 1981250306,
+            "video_width_pix": 830,
+            "video_height_pix": 214
+        },
+        {
+            "video_id": 2030735934,
+            "video_width_pix": 1000,
+            "video_height_pix": 1544
+        },
+        {
+            "video_id": 2036366833,
+            "video_width_pix": 432,
+            "video_height_pix": 1204
+        }
     ],
     "TranquilPanther": [
-        62660378,
-        357532314,
-        431495718,
-        477037938,
-        489560891,
-        651966739,
-        675356666,
-        675808983,
-        962638464,
-        1057775501,
-        1360332361,
-        1456719978,
-        1462669248,
-        1510465149,
-        1557355665,
-        1582739342,
-        1651649809,
-        1732555338,
-        1735658729,
-        1831430173,
-        1831501720,
-        1895797255,
-        1907520217,
-        1979655353,
-        2138781893
+        {
+            "video_id": 62660378,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 357532314,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 431495718,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 477037938,
+            "video_width_pix": 378,
+            "video_height_pix": 452
+        },
+        {
+            "video_id": 489560891,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 651966739,
+            "video_width_pix": 362,
+            "video_height_pix": 420
+        },
+        {
+            "video_id": 675356666,
+            "video_width_pix": 402,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 675808983,
+            "video_width_pix": 436,
+            "video_height_pix": 476
+        },
+        {
+            "video_id": 962638464,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1057775501,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1360332361,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1456719978,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1462669248,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1510465149,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1557355665,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1582739342,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1651649809,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1732555338,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1735658729,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1831430173,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1831501720,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1895797255,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1907520217,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 1979655353,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        },
+        {
+            "video_id": 2138781893,
+            "video_width_pix": 640,
+            "video_height_pix": 480
+        }
     ],
     "UppityFerret": [
-        50183736,
-        86824777,
-        203484552,
-        403002745,
-        414099215,
-        532567355,
-        602691466,
-        659002593,
-        815797699,
-        1085105007,
-        1131517877,
-        1170955420,
-        1197493895,
-        1241990995,
-        1266852458,
-        1335286655,
-        1610683375,
-        1725214092,
-        1960237444,
-        2045808129,
-        2104375029
+        {
+            "video_id": 50183736,
+            "video_width_pix": 608,
+            "video_height_pix": 576
+        },
+        {
+            "video_id": 86824777,
+            "video_width_pix": 624,
+            "video_height_pix": 572
+        },
+        {
+            "video_id": 203484552,
+            "video_width_pix": 608,
+            "video_height_pix": 576
+        },
+        {
+            "video_id": 403002745,
+            "video_width_pix": 664,
+            "video_height_pix": 572
+        },
+        {
+            "video_id": 414099215,
+            "video_width_pix": 624,
+            "video_height_pix": 572
+        },
+        {
+            "video_id": 532567355,
+            "video_width_pix": 592,
+            "video_height_pix": 576
+        },
+        {
+            "video_id": 602691466,
+            "video_width_pix": 608,
+            "video_height_pix": 576
+        },
+        {
+            "video_id": 659002593,
+            "video_width_pix": 664,
+            "video_height_pix": 572
+        },
+        {
+            "video_id": 815797699,
+            "video_width_pix": 664,
+            "video_height_pix": 572
+        },
+        {
+            "video_id": 1085105007,
+            "video_width_pix": 592,
+            "video_height_pix": 576
+        },
+        {
+            "video_id": 1131517877,
+            "video_width_pix": 664,
+            "video_height_pix": 572
+        },
+        {
+            "video_id": 1170955420,
+            "video_width_pix": 664,
+            "video_height_pix": 572
+        },
+        {
+            "video_id": 1197493895,
+            "video_width_pix": 592,
+            "video_height_pix": 576
+        },
+        {
+            "video_id": 1241990995,
+            "video_width_pix": 624,
+            "video_height_pix": 572
+        },
+        {
+            "video_id": 1266852458,
+            "video_width_pix": 664,
+            "video_height_pix": 572
+        },
+        {
+            "video_id": 1335286655,
+            "video_width_pix": 664,
+            "video_height_pix": 572
+        },
+        {
+            "video_id": 1610683375,
+            "video_width_pix": 664,
+            "video_height_pix": 572
+        },
+        {
+            "video_id": 1725214092,
+            "video_width_pix": 608,
+            "video_height_pix": 576
+        },
+        {
+            "video_id": 1960237444,
+            "video_width_pix": 592,
+            "video_height_pix": 576
+        },
+        {
+            "video_id": 2045808129,
+            "video_width_pix": 624,
+            "video_height_pix": 572
+        },
+        {
+            "video_id": 2104375029,
+            "video_width_pix": 624,
+            "video_height_pix": 572
+        }
     ]
 }
